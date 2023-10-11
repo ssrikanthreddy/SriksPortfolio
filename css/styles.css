@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  height: 100%;
+}
+
+#visualizer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=styles.css.map */
