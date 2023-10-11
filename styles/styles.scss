@@ -1,4 +1,4 @@
-$primary: #0F0F0F;
+$primary: #1b1b1b;
 $secondary: #232D3F;
 $accents: #005B41;
 $text: #ffffff;
@@ -19,12 +19,13 @@ body {
 }
 
 #visualizer {
+  margin-left: 99px; /* Adjust the value as needed */
   min-height: 80vh;
   display: flex;
   flex-wrap: wrap;
   border-radius: 35px; /* Add rounded corners */
   height: 80vh; /* Increase height */
-  width: 74vw; /* Increase width */
+  width: 73.5vw; /* Increase width */
   overflow: hidden; /* Prevent content overflow */
   background-color: $secondary;
 }
@@ -32,24 +33,25 @@ body {
 #main {
   width: 400px;
   background-color: $secondary;
-  padding: 50px 00px 100px 00px;
+  padding: 50px 40px 100px 60px; /* Add padding as needed */
   margin: 0;
   background: $secondary;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  box-sizing: border-box; /* Include padding in total width and height */
 }
 
 #side {
   flex: 1;
   background-color: $primary;
   padding: 30px 100px 100px 100px;
-  margin: 0;
+  margin-left: 20px;
   border-radius: 35px;
   background: $primary;
   flex-basis: 30%; /* Set the initial width of side to 30% */
+  color: $text;
 }
 
 /* Add this CSS to your styles.css file */
@@ -66,10 +68,11 @@ body {
 }
 
 h1 {
+  font-size: 4rem;
   text-align: center;
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  color: $accents; /* Adjust color as needed */
+  color: $text; /* Adjust color as needed */
 }
 
 p {
@@ -112,7 +115,7 @@ header{
   text-align: center;
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  font-size: 2rem; /* This will make the font size double that of the default size */
+  font-size: 2.2rem; /* This will make the font size double that of the default size */
   font-weight: bold; /* Optionally, make the name bold */
 }
 
@@ -167,3 +170,45 @@ header{
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+
+.tab-sidebar {
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 7px;
+  border-radius: 100px;
+  position: relative;
+  top: -164px; /* Adjust this value to shift the sidebar up or down */
+  width: 78px; /* Set the width of the sidebar */
+  background-color: #232D3F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Add spacing between the icons */
+  margin-top: 20px; /* Add some top margin for separation */
+}
+
+
+.tab svg {
+  width: 33px; /* Adjust the width as needed */
+  height: 33px; /* Adjust the height as needed */
+  fill: white; /* Set the color of the SVG */
+  transition: fill 0.3s;
+}
+
+.tab svg:hover {
+  fill: #c1ff72; /* Change the color on hover */
+}
