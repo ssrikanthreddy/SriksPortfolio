@@ -1,6 +1,6 @@
 $primary: #1b1b1b;
 $secondary: #232D3F;
-$accents: #005B41;
+$accents: #c1ff72;
 $text: #ffffff;
 $Poppins: 'Poppins', sans-serif;
 
@@ -141,11 +141,11 @@ header{
   width: 25px; /* Adjust the width as needed */
   height: 25px; /* Adjust the height as needed */
   fill: white; /* Set the color of the SVG */
-  transition: fill 0.3s;
+  transition: fill 0.5s;
 }
 
 .links svg:hover {
-  fill: #c1ff72; /* Change the color on hover */
+  fill: $accents; /* Change the color on hover */
 }
 
 .download {
@@ -206,9 +206,29 @@ header{
   width: 33px; /* Adjust the width as needed */
   height: 33px; /* Adjust the height as needed */
   fill: white; /* Set the color of the SVG */
-  transition: fill 0.3s;
+  transition: fill 0.5s;
 }
 
 .tab svg:hover {
-  fill: #c1ff72; /* Change the color on hover */
+  fill: $accents; /* Change the color on hover */
 }
+
+.home.content.active {
+  margin: 0px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.content {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
