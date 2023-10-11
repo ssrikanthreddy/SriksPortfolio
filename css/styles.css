@@ -1,11 +1,112 @@
-body {
-  margin: 0;
+body, html {
   height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #005B41;
 }
 
 #visualizer {
+  min-height: 80vh;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 35px; /* Add rounded corners */
+  height: 80vh; /* Increase height */
+  width: 75vw; /* Increase width */
+  overflow: hidden; /* Prevent content overflow */
+  background-color: #232D3F;
+}
+
+#main {
+  width: 400px;
+  background-color: #232D3F;
+  padding: 50px 0px 100px 0px;
+  margin: 0;
+  background: #232D3F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#side {
+  flex: 1;
+  background-color: #0F0F0F;
+  padding: 30px 100px 100px 100px;
+  margin: 0;
+  border-radius: 35px;
+  background: #0F0F0F;
+  flex-basis: 30%; /* Set the initial width of side to 30% */
+}
+
+/* Add this CSS to your styles.css file */
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  background-image: url("../assets/photo.png"); /* Add the path to your profile picture */
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid #000; /* Adjust color and size of the border as needed */
+  margin: 0 auto 20px; /* Center the profile picture and add some margin */
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #005B41; /* Adjust color as needed */
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Remove spinners from number input fields */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* For Firefox, which uses a different style */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+header {
+  width: 100%; /* Make the header element fill the available space */
+  text-align: center; /* Center the content within the header */
+}
+
+.name, .title {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  margin: 0;
+}
+
+.name {
+  text-align: center;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem; /* This will make the font size double that of the default size */
+  font-weight: bold; /* Optionally, make the name bold */
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em; /* Default font size */
 }
 
 /*# sourceMappingURL=styles.css.map */
