@@ -1,6 +1,6 @@
 $primary: #1b1b1b;
 $secondary: #232D3F;
-$accents: #c1ff72;
+$accents: #03ce2f;
 $text: #ffffff;
 $Poppins: 'Poppins', sans-serif;
 
@@ -56,14 +56,14 @@ body {
 }
 
 .profile-picture {
-  width: 14vw;
-  height: 14vw;
+  width: 12vw;
+  height: 12vw;
   background-image: url('../assets/photo.png');
   background-size: cover;
   border-radius: 50%;
   box-shadow: 0 0 0.625vh rgba(0, 0, 0, 0.5);
   border: 0.125vh solid #000;
-  margin: 0vh auto 1vw;
+  margin: 1vw auto 1vw;
 }
 
 h1 {
@@ -294,11 +294,11 @@ header{
 @keyframes rollDown {
   from {
     opacity: 0;
-    transform: translateY(-100%);
+    //transform: translateY(-100%);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    //transform: translateY(0);
   }
 }
 
@@ -309,3 +309,65 @@ header{
 .roll-down {
   animation: rollDown 0.5s ease-in-out forwards;
 }
+
+
+.about.content.active {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about.content.active .col {
+  font-family: $Poppins;
+  color: accc;
+  flex: 1;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.about.content.active .details {
+  flex: 1;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.details {
+  font-size: 1vw;
+  font-family: $Poppins;
+  margin-top: 7.25vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.details span{
+  font-weight: bold;
+  color: $accents;
+}
+
+.details p{
+  line-height: .5;
+  font-size: 1vw;
+}
+
+.spec {
+  margin-bottom: 1vw;
+}
+
+.about.content.active .col h2 {
+  color: $text;
+  font-size: 2.5vw;
+  margin-bottom: 0px;
+}
+
+.about.content.active .col span {
+  color: $accents;
+}
+
+.about.content.active .col p {
+  font-family: $Poppins;
+  font-size: 1vw;
+  line-height: 1.6;
+  margin: 2vw auto 0;
+}
+ 
