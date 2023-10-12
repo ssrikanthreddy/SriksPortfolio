@@ -1,4 +1,5 @@
 body, html {
+  width: 100%;
   height: 100%;
   margin: 0;
 }
@@ -7,74 +8,74 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #034f3a, #013c34); /* Replace with your desired colors */
+  background: linear-gradient(to bottom, #034f3a, #013c34);
   height: 100vh;
   margin: 0;
 }
 
 #visualizer {
-  margin-left: 99px; /* Adjust the value as needed */
+  margin-left: 6vh;
   min-height: 80vh;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 35px; /* Add rounded corners */
-  height: 80vh; /* Increase height */
-  width: 73.5vw; /* Increase width */
-  overflow: hidden; /* Prevent content overflow */
+  border-radius: 4.375vh;
+  height: 80vh;
+  width: 73.5vw;
+  overflow: hidden;
   background-color: #232D3F;
 }
 
 #main {
-  width: 400px;
+  width: 25rem;
   background-color: #232D3F;
-  padding: 50px 40px 100px 60px; /* Add padding as needed */
+  padding: 0vw 0vw 0vw 0vw;
   margin: 0;
   background: #232D3F;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box; /* Include padding in total width and height */
+  box-sizing: border-box;
 }
 
 #side {
   flex: 1;
   background-color: #1b1b1b;
-  padding: 30px 100px 100px 100px;
-  margin-left: 20px;
-  border-radius: 35px;
+  padding: 1.3125rem 4.375vh 8.75vh 4.375vh;
+  margin-left: 0vw;
+  border-radius: 4.375vh;
   background: #1b1b1b;
-  flex-basis: 30%; /* Set the initial width of side to 30% */
+  flex-basis: 30%;
   color: #ffffff;
 }
 
-/* Add this CSS to your styles.css file */
 .profile-picture {
-  width: 200px;
-  height: 200px;
-  background-image: url("../assets/photo.png"); /* Add the path to your profile picture */
+  width: 14vw;
+  height: 14vw;
+  background-image: url("../assets/photo.png");
   background-size: cover;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border: 2px solid #000; /* Adjust color and size of the border as needed */
-  margin: 0 auto 20px; /* Center the profile picture and add some margin */
+  box-shadow: 0 0 0.625vh rgba(0, 0, 0, 0.5);
+  border: 0.125vh solid #000;
+  margin: 0vh auto 1.25vh;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 16vh;
   text-align: center;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  color: #ffffff; /* Adjust color as needed */
+  color: #ffffff;
 }
 
 p {
   font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
+  font-size: 2.75vh;
   line-height: 1.6;
   color: #ffffff;
 }
 
+/* Rest of your CSS remains the same */
 /* Remove spinners from number input fields */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -90,9 +91,9 @@ input[type=number] {
 }
 
 header {
-  margin-top: 10px;
-  width: 100%; /* Make the header element fill the available space */
-  text-align: center; /* Center the content within the header */
+  margin-top: 0.5vh;
+  width: 100%;
+  text-align: center;
 }
 
 .name, .title {
@@ -105,52 +106,52 @@ header {
   text-align: center;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  font-size: 2.2rem; /* This will make the font size double that of the default size */
-  font-weight: bold; /* Optionally, make the name bold */
+  font-size: 2vw;
+  font-weight: bold;
 }
 
 .title {
   text-align: center;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 1vw;
   font-weight: normal;
-  color: rgba(255, 255, 255, 0.7); /* Adjust the last value (0.7) for the desired opacity */
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .links {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Add spacing between the icons */
-  margin-top: 20px; /* Add some top margin for separation */
+  gap: 2vw;
+  margin-top: 3vw;
 }
 
 .links svg {
-  width: 25px; /* Adjust the width as needed */
-  height: 25px; /* Adjust the height as needed */
-  fill: white; /* Set the color of the SVG */
+  width: 3.7vh;
+  height: 3.7vh;
+  fill: white;
   transition: fill 0.5s;
 }
 
 .links svg:hover {
-  fill: #c1ff72; /* Change the color on hover */
+  fill: #c1ff72;
 }
 
 .download {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 3vw;
 }
 
 .download a {
   display: inline-block;
-  padding: 10px 40px;
+  padding: 0.625vh 2.5vh;
   background-color: transparent;
   color: #ffffff;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  font-size: 1.05rem;
-  border: 2px solid #ffffff;
-  border-radius: 40px; /* Adjust the radius for rounded corners */
+  font-size: 1.3vw;
+  border: 0.176vh solid #ffffff;
+  border-radius: 2.5vh;
   transition: background-color 0.3s;
 }
 
@@ -158,49 +159,27 @@ header {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.tab-sidebar {
-  margin-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 7px;
-  border-radius: 100px;
-  position: relative;
-  top: -164px; /* Adjust this value to shift the sidebar up or down */
-  width: 78px; /* Set the width of the sidebar */
-  background-color: #232D3F;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .tab {
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 0.625vh;
+  margin-bottom: 0.625vh;
   color: #ffffff;
   cursor: pointer;
 }
 
-.links {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Add spacing between the icons */
-  margin-top: 20px; /* Add some top margin for separation */
-}
-
 .tab svg {
-  width: 33px; /* Adjust the width as needed */
-  height: 33px; /* Adjust the height as needed */
-  fill: white; /* Set the color of the SVG */
+  width: 2vw;
+  height: 2vw;
+  fill: white;
   transition: fill 0.5s;
 }
 
 .tab svg:hover {
-  fill: #c1ff72; /* Change the color on hover */
+  fill: #c1ff72;
 }
 
 .home.content.active {
-  margin: 0px;
-  padding-top: 15px;
+  margin: 0rem;
+  padding-top: 1vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -209,12 +188,66 @@ header {
   text-align: center;
 }
 
+.home.content.active h1 {
+  font-size: 8vh;
+}
+
 .content {
   display: none;
 }
 
 .active {
   display: block;
+}
+
+.tab-sidebar {
+  gap: 0.7vw;
+  width: 4vw;
+  margin-left: 1vh;
+  padding-top: 1.2vh;
+  padding-bottom: 0.7vh;
+  border-radius: 6.25vh;
+  background-color: #232D3F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  gap: 0.7vw;
+  width: 4vw;
+  margin-top: auto;
+  margin-left: 1vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 1.5vh;
+  padding-bottom: 0.7vh;
+  border-radius: 6.25vh;
+  position: relative;
+  top: 0;
+  background-color: #232D3F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  margin-left: 1vh;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  margin-left: 2vh;
+  min-height: 80vh;
+  border-radius: 4.375vh;
+  height: 80vh;
+  overflow: hidden;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=styles.css.map */
