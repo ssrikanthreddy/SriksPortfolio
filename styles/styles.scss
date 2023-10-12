@@ -1,4 +1,4 @@
-$primary: #1b1b1b;
+$primary: #1a1a1a;
 $secondary: #232D3F;
 $accents: #03ce2f;
 $text: #ffffff;
@@ -10,14 +10,22 @@ body, html {
   margin: 0;
 }
 
+link[rel="icon"] {
+  display: block;
+  
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #034f3a, #013c34);
+  background: linear-gradient(to bottom, #02797f, #043d40);
+  //background: url("../assets/grad.jpeg");
+  background-size: cover;
   height: 100vh;
   margin: 0;
 }
+
 
 #visualizer {
   margin-left: 6vh;
@@ -136,6 +144,7 @@ header{
   font-size: 1vw;
   font-weight: normal;
   color: $accents;
+  opacity: 1;
 }
 .links {
   display: flex;

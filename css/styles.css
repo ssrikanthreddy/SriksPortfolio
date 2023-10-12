@@ -4,11 +4,16 @@ body, html {
   margin: 0;
 }
 
+link[rel=icon] {
+  display: block;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #034f3a, #013c34);
+  background: linear-gradient(to bottom, #02797f, #043d40);
+  background-size: cover;
   height: 100vh;
   margin: 0;
 }
@@ -40,11 +45,11 @@ body {
 
 #side {
   flex: 1;
-  background-color: #1b1b1b;
+  background-color: #1a1a1a;
   padding: 1.3125rem 4.375vh 8.75vh 4.375vh;
   margin-left: 0vw;
   border-radius: 4.375vh;
-  background: #1b1b1b;
+  background: #1a1a1a;
   flex-basis: 30%;
   color: #ffffff;
 }
@@ -126,6 +131,7 @@ header {
   font-size: 1vw;
   font-weight: normal;
   color: #03ce2f;
+  opacity: 1;
 }
 
 .links {
