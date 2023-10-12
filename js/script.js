@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+  
+
   const tabs = document.querySelectorAll('.tab');
-  const contents = document.querySelectorAll('.content');
 
   tabs.forEach(tab => {
     tab.addEventListener('click', function() {
@@ -25,4 +26,5 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
 });

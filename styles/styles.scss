@@ -321,9 +321,28 @@ header{
 
 
 .about.content.active {
+  scrollbar-color: red yellow;
+  margin-right: 8px; /* Add space for the scrollbar */
+  max-height: 80vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   display: flex;
   justify-content: space-between;
 }
+
+.about.content.active::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+.about.content.active::-webkit-scrollbar-track {
+  background: transparent; /* Set the background color of the track */
+}
+
+.about.content.active::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color, $secondary); /* Set the color of the scrollbar thumb */
+  border-radius: 10px; /* Round the edges of the thumb */
+}
+
 
 .about.content.active .col {
   font-family: $Poppins;
