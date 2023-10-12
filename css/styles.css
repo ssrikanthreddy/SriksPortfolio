@@ -137,14 +137,14 @@ header {
 .links {
   display: flex;
   justify-content: center;
-  gap: 2vw;
+  gap: 1.6vw;
   margin-top: 1vw;
   margin-bottom: 2vw;
 }
 
 .links svg {
-  width: 3.7vh;
-  height: 3.7vh;
+  width: 3vh;
+  height: 3vh;
   fill: white;
   transition: fill 0.5s;
 }
