@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+  const aboutContent = document.querySelector('.about.content');
+
+  aboutContent.addEventListener('mouseenter', function() {
+    aboutContent.classList.remove('transparent-scrollbar');
+  });
   
+  aboutContent.addEventListener('mouseleave', function() {
+    aboutContent.classList.add('transparent-scrollbar');
+  });
 
   const tabs = document.querySelectorAll('.tab');
 
