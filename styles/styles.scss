@@ -419,7 +419,7 @@ header{
 
 .grid-item {
   background-color: transparent;
-  padding: 2vw 0 2vw;
+  padding: 1vw 0 1vw 1vw;
   text-align: left;
 }
 
@@ -437,7 +437,7 @@ header{
 }
 
 .grid-item p{
-  
+  margin-top: 0.3vw;
   font-family: $Poppins;
   text-align: left;
   line-height: 1.2;
