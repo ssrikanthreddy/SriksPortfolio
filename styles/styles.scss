@@ -3,6 +3,8 @@ $secondary: #232D3F;
 $accents: #03ce2f;
 $text: #ffffff;
 $Poppins: 'Poppins', sans-serif;
+$main-width: 22vw;
+$vis-width: 76vw;
 
 body, html {
   width: 100%;
@@ -34,14 +36,14 @@ body {
   flex-wrap: wrap;
   border-radius: 4.375vh;
   height: 80vh;
-  width: 73.5vw;
+  width: $vis-width;
   overflow: hidden;
   background-color: $secondary;
 }
 
 #main {
   max-height: 80vh;
-  width: 22vw;
+  width: $main-width;
   background-color: $secondary;
   padding: 0vw 0vw 0vw 0vw;
   margin: 0;
@@ -269,7 +271,6 @@ header{
 }
 
 .nav {
-  
   margin-left: 1vh;
   top: 0;
   display: flex;
@@ -326,7 +327,9 @@ header{
 .about.content.active {
   margin-right: 0px; /* Add space for the scrollbar */
   max-height: 80vh;
-  overflow-y: scroll;
+  width:fit-content;
+  overflow-y: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   display: flex;
   justify-content: space-between;
@@ -341,8 +344,12 @@ header{
 }
 
 .about.content.active::-webkit-scrollbar-thumb {
+  transition: 0.9s;
   background-color: var(--scrollbar-thumb-color, $secondary); /* Set the color of the scrollbar thumb */
   border-radius: 10px; /* Round the edges of the thumb */
+}
+.about.content.active::-webkit-scrollbar-thumb:hover{
+  background-color: $accents;
 }
 
 
@@ -365,7 +372,7 @@ header{
 .details {
   font-size: 1vw;
   font-family: $Poppins;
-  margin-top: 7.25vw;
+  margin-top: 8.3vw;
   display: flex;
   flex-direction: column;
 }
@@ -377,7 +384,7 @@ header{
 
 .details p{
   line-height: .5;
-  font-size: 1vw;
+  font-size: 1.1vw;
 }
 
 .spec {
@@ -403,11 +410,10 @@ header{
 }
 
 .do {
-
   font-family: $Poppins;
   font-size: .1vw;
   margin-top: 4vw; 
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
 }
 
 .do h2 {
@@ -431,19 +437,25 @@ header{
 
 .grid-item {
   background-color: transparent;
-  padding: 2vw;
+  padding: 2vw 0 2vw;
   text-align: left;
 }
 
 
 .grid-item h3{
   text-align: left;
-  margin-right: 2.3vh;
+  margin: 0  0;
   font-size: 1.3VW !important;
 }
 
 .grid-item svg{
-  width: 3vh;
-  height: 3vh;
+  width:  3vw;
+  height: 3vw;
   fill: $accents;
+}
+
+.grid-item p{
+  text-align: left;
+  line-height: .5;
+  font-size: 1.1vw;
 }

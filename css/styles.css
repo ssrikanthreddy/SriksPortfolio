@@ -25,7 +25,7 @@ body {
   flex-wrap: wrap;
   border-radius: 4.375vh;
   height: 80vh;
-  width: 73.5vw;
+  width: 76vw;
   overflow: hidden;
   background-color: #232D3F;
 }
@@ -308,7 +308,9 @@ header {
 .about.content.active {
   margin-right: 0px; /* Add space for the scrollbar */
   max-height: 80vh;
-  overflow-y: scroll;
+  width: fit-content;
+  overflow-y: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   display: flex;
   justify-content: space-between;
@@ -323,8 +325,13 @@ header {
 }
 
 .about.content.active::-webkit-scrollbar-thumb {
+  transition: 0.9s;
   background-color: var(--scrollbar-thumb-color, #232D3F); /* Set the color of the scrollbar thumb */
   border-radius: 10px; /* Round the edges of the thumb */
+}
+
+.about.content.active::-webkit-scrollbar-thumb:hover {
+  background-color: #03ce2f;
 }
 
 .about.content.active .col {
@@ -346,7 +353,7 @@ header {
 .details {
   font-size: 1vw;
   font-family: "Poppins", sans-serif;
-  margin-top: 7.25vw;
+  margin-top: 8.3vw;
   display: flex;
   flex-direction: column;
 }
@@ -358,7 +365,7 @@ header {
 
 .details p {
   line-height: 0.5;
-  font-size: 1vw;
+  font-size: 1.1vw;
 }
 
 .spec {
@@ -387,7 +394,7 @@ header {
   font-family: "Poppins", sans-serif;
   font-size: 0.1vw;
   margin-top: 4vw;
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
 }
 
 .do h2 {
@@ -410,20 +417,26 @@ header {
 
 .grid-item {
   background-color: transparent;
-  padding: 2vw;
+  padding: 2vw 0 2vw;
   text-align: left;
 }
 
 .grid-item h3 {
   text-align: left;
-  margin-right: 2.3vh;
+  margin: 0 0;
   font-size: 1.3VW !important;
 }
 
 .grid-item svg {
-  width: 3vh;
-  height: 3vh;
+  width: 3vw;
+  height: 3vw;
   fill: #03ce2f;
+}
+
+.grid-item p {
+  text-align: left;
+  line-height: 0.5;
+  font-size: 1.1vw;
 }
 
 /*# sourceMappingURL=styles.css.map */
