@@ -31,6 +31,7 @@ body {
 }
 
 #main {
+  max-height: 80vh;
   width: 22vw;
   background-color: #232D3F;
   padding: 0vw 0vw 0vw 0vw;
@@ -46,8 +47,9 @@ body {
 #side {
   flex: 1;
   background-color: #1a1a1a;
-  padding: 1.3125rem 4.375vh 8.75vh 4.375vh;
+  padding: 1.3125rem 2vh 8.75vh 4.375vh;
   margin-left: 0vw;
+  margin-right: 0;
   border-radius: 4.375vh;
   background: #1a1a1a;
   flex-basis: 30%;
@@ -185,8 +187,8 @@ header {
 }
 
 .tab svg {
-  width: 2vw;
-  height: 2vw;
+  width: 4vh;
+  height: 4vh;
   fill: white;
   transition: fill 0.5s;
 }
@@ -207,7 +209,8 @@ header {
 }
 
 .home.content.active h1 {
-  font-size: 8vh;
+  margin-right: 2.3vh;
+  font-size: 4vw;
 }
 
 .content {
@@ -303,8 +306,7 @@ header {
 }
 
 .about.content.active {
-  scrollbar-color: red yellow;
-  margin-right: 8px; /* Add space for the scrollbar */
+  margin-right: 0px; /* Add space for the scrollbar */
   max-height: 80vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -336,7 +338,7 @@ header {
 
 .about.content.active .details {
   flex: 1;
-  padding: 20px;
+  padding: 0.4vw;
   background-color: transparent;
   border-radius: 10px;
 }
@@ -366,7 +368,7 @@ header {
 .about.content.active .col h2 {
   color: #ffffff;
   font-size: 2.5vw;
-  margin-bottom: 0px;
+  margin-bottom: 0vw;
 }
 
 .about.content.active .col span {
@@ -374,10 +376,54 @@ header {
 }
 
 .about.content.active .col p {
+  word-spacing: 0.2vw;
   font-family: "Poppins", sans-serif;
   font-size: 1vw;
   line-height: 1.6;
   margin: 2vw auto 0;
+}
+
+.do {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.1vw;
+  margin-top: 4vw;
+  margin-bottom: 2vw;
+}
+
+.do h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7VW !important; /* Adjust the font size to your preference */
+  color: #ffffff; /* Adjust the color to your preference */
+}
+
+.do span {
+  color: #03ce2f; /* Adjust the color to your preference */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  grid-template-rows: repeat(2, 1fr); /* Two rows with equal height */
+  grid-gap: 10px; /* Spacing between grid items */
+  width: 200%;
+}
+
+.grid-item {
+  background-color: transparent;
+  padding: 2vw;
+  text-align: left;
+}
+
+.grid-item h3 {
+  text-align: left;
+  margin-right: 2.3vh;
+  font-size: 1.3VW !important;
+}
+
+.grid-item svg {
+  width: 3vh;
+  height: 3vh;
+  fill: #03ce2f;
 }
 
 /*# sourceMappingURL=styles.css.map */
