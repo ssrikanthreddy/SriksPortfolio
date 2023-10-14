@@ -423,7 +423,7 @@ header {
 }
 
 .about.content.active::-webkit-scrollbar {
-  width: 5px; /* Set the width of the scrollbar */
+  width: 0.3vw; /* Set the width of the scrollbar */
 }
 
 .about.content.active::-webkit-scrollbar-track {
@@ -450,25 +450,48 @@ header {
   background-color: transparent !important;
 }
 
-.fun-fact-card {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+.cards {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 0.6vw;
+  width: 200%;
+  padding-bottom: 10vh;
 }
 
-.fun-fact-card h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #333;
+.card {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 13vh;
+  background-color: #232D3F;
+  padding: 3em;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 10px; /* Soft corners */
+  margin: 0 0.5em; /* Adjust the margin as needed */
+  transition: transform 0.3s ease; /* Add a smooth transition on hover */
 }
 
-.fun-fact-card p {
-  font-size: 1em;
-  color: #555;
-  line-height: 1.6;
-  margin: 0;
+.card:hover {
+  transform: translateY(-10px); /* Add a slight lift on hover */
+}
+
+.card-title {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em; /* Adjust the font size as needed */
+  color: #ffffff; /* Adjust the color as needed */
+}
+
+.card svg {
+  width: 3vw;
+  height: 3vw;
+  fill: #ffffff;
+}
+
+mini {
+  font-size: 5em;
 }
 
 /*# sourceMappingURL=styles.css.map */
