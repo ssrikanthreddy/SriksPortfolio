@@ -99,12 +99,29 @@ body {
 
 @media (max-width: 1024px) {
 
+  .profile-picture{
+    height: 200px !important;
+    width: 200px !important;
+  }
+
+  .mobile-bar{
+    justify-content: center;
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .tab{
+    
+    align-content: center;
+  }
+
   body{
     background-color: $primary;
   }
 
  .links{
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -113,7 +130,7 @@ body {
   }
 
   #visualizer{
-    
+    flex-wrap: nowrap !important;
     border-radius: 0px;
     height: 100%;
     width: 100%;
@@ -121,6 +138,7 @@ body {
   }
 
   #main{
+    width: 400px !important;
     border-radius: 0px;
     display: none !important;
   }
@@ -131,6 +149,7 @@ body {
   }
   
   #side{
+    overflow: hidden;
     position: relative;
     border-radius: 0px !important;
   }
@@ -576,4 +595,8 @@ header{
   flex-direction: column;
   display: flex;
   align-items: center; 
+}
+
+.mobile-bar{
+  display: none;
 }
