@@ -1,10 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('menu-button').addEventListener('click', function() {
-    
+  
     document.getElementById('main').classList.toggle('active');
 
   });
+
+  function handleMobileClick() {
+    var mobileElements = document.getElementsByClassName('mobile');
+
+    for (var i = 0; i < mobileElements.length; i++) {
+        mobileElements[i].addEventListener('click', function() {
+            document.getElementById('menu-button').click();
+        });
+    }
+}
+
+  handleMobileClick();
+
+
+  
   
 
   const aboutContent = document.querySelector('.about.content');
