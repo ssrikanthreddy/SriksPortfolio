@@ -6,6 +6,36 @@ $Poppins: 'Poppins', sans-serif;
 $main-width: 22vw;
 $vis-width: 76vw;
 
+//Scrollbar
+
+.about.content.active::-webkit-scrollbar {
+  width: .3vw; /* Set the width of the scrollbar */
+}
+
+.about.content.active::-webkit-scrollbar-track {
+  width: 20px;
+  background: transparent; /* Set the background color of the track */
+}
+
+.about.content.active::-webkit-scrollbar-track:hover {
+  transition: 1s;
+  border-radius: 10px;
+  width: 20px;
+  background: $secondary; /* Set the background color of the track */
+}
+
+.about.content.active::-webkit-scrollbar-thumb:hover {
+  background-color: $accents;
+}
+
+.about.content.active::-webkit-scrollbar-thumb {
+  background-color: $secondary;
+}
+
+.transparent-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent !important;
+}
+
 body, html {
   width: 100%;
   height: 100%;
@@ -41,7 +71,152 @@ body {
   background-color: $secondary;
 }
 
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: $text;
+  margin: 10px 10px 2px ;
+  transition: 0.4s;
+}
+
+#menu-button {
+  display: none !important;
+  position: relative;
+ align-self: flex-end;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: $accents; /* Your desired background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media (max-width: 1360px) {
+
+ .links{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #menu-button {
+    display: block !important; /* Show the menu button */
+  }
+
+  #visualizer{
+    border-radius: 0px;
+    height: 100%;
+    width: 100%;
+    margin-left: 0vh;
+  }
+
+  #main{
+    border-radius: 0px;
+    display: none !important;
+  }
+
+  #main.active{
+    order: 4;
+    display: block !important;
+  }
+  
+  #side{
+    border-radius: 0px !important;
+  }
+
+  .tab-sidebar {
+    top: 100vw;
+    width: 100%;
+    margin-left: 0vh !important;
+    border-radius: 0vh !important;
+  }
+  
+  .navbar {
+    width: 100%;
+    margin-left: 0vh !important;
+    border-radius: 0vh !important;
+  }
+  
+  .nav {
+    display:none !important;
+    margin-left:0vh !important;
+  }
+
+  .nav.active{
+    overflow: visible;
+    background-color: $secondary;
+    height: 100%;
+    display:block !important;
+  }
+
+
+  .about.content.active h2{
+    padding-left: 0vw !important;
+    font-size: 3em !important;
+  }
+  
+  .col-intro {
+    justify-content: left !important;
+    padding-left: 0em !important;
+    width: 100%;
+    flex: 1;
+    flex-direction: row !important;
+  }
+
+  .bio{
+    margin-top: 0px;
+    margin-right: 7vw ;
+    width: 50% !important;
+    font-size: 2vw !important;
+  }
+
+
+  .details{
+    width: auto;
+  }
+
+  .details p{
+    margin-top: 0px;
+    font-size: 2vw !important;
+  }
+  
+
+  @media (max-width:768px) {
+    .col-intro {
+      justify-content: left !important;
+      padding-left: 0em !important;
+      width: 100%;
+      flex: 1;
+      flex-direction: column !important;
+    }
+
+    .bio{
+      width: 100% !important;
+      font-size: 3vw !important;
+    }
+
+    .about.content.active h2{
+      font-size: 6vw !important;
+    }
+
+    .details{
+      width: auto;
+    }
+
+    .details p{
+      font-size: 3vw !important;
+      line-height: 1.2 !important;
+    }
+  }
+   
+  
+  
+}
+
 #main {
+  display: block;
   max-height: 80vh;
   width: $main-width;
   background-color: $secondary;
@@ -86,9 +261,10 @@ h1 {
   color: $text;
 }
 
-p {
+.details p {
+  margin-top: 0px;
   font-family: $Poppins;
-  font-size: 2.75vh;
+  font-size: 1vw;
   line-height: 1.6;
   color: $text;
 }
@@ -271,15 +447,12 @@ header{
 }
 
 .nav {
-  margin-left: 1vh;
   top: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   position: relative;
   margin-left: 2vh;
   min-height: 80vh;
-  border-radius: 4.375vh;
   height: 80vh;
   overflow: hidden;
   background-color: transparent;
@@ -325,38 +498,44 @@ header{
 
 
 .about.content.active {
-  margin-right: 0px; /* Add space for the scrollbar */
+  margin-right: 0px; 
   max-height: 80vh;
   width:fit-content;
   overflow-y: auto;
   overflow-x: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 
-.about.content.active .col {
+.about.content.active .col-intro {
   font-family: $Poppins;
-  color: accc;
+  color: $text;
+  display: flex;
+  justify-content: space-between;
   flex: 1;
+  flex-direction: row;
   padding: 20px;
   background-color: transparent;
   border-radius: 10px;
 }
 
-.about.content.active .details {
-  flex: 1;
-  padding: 0.4vw;
-  background-color: transparent;
-  border-radius: 10px;
-}
 
 .details {
   font-size: 1vw;
   font-family: $Poppins;
-  margin-top: 8.3vw;
+  line-height: 1.6;
+  margin-top: 1em;
   display: flex;
+  margin-right: 3vw;
   flex-direction: column;
+}
+
+.bio{
+  width: 50%;
+  display: flex;
+  font-size: 1.3em;
 }
 
 .details span{
@@ -364,8 +543,7 @@ header{
   color: $accents;
 }
 
-.details p{
-  line-height: .5;
+.about.content.active.page-about.col-intro.details p{
   font-size: 1.1vw;
 }
 
@@ -373,150 +551,22 @@ header{
   margin-bottom: 1vw;
 }
 
-.about.content.active .col h2 {
+.about.content.active h2 {
+  padding-left: 1vw;
+  font-family: $Poppins;
+  display: flex;
   color: $text;
   font-size: 2.5vw;
   margin-bottom: 0vw;
 }
 
-.about.content.active .col span {
+.about.content.active span {
   color: $accents;
 }
 
-.about.content.active .col .bio {
-  word-spacing: .2vw;
-  font-family: $Poppins;
-  font-size: 1vw;
-  line-height: 1.6;
-  margin: 2vw auto 0;
-}
 
-.do {
-  font-family: $Poppins;
-  font-size: .1vw;
-  margin-top: 4vw; 
-  margin-bottom: 1vw;
-}
-
-.do h2 {
-  font-family: $Poppins;
-  font-size:  1.7VW !important; /* Adjust the font size to your preference */
-  color: $text; /* Adjust the color to your preference */
-}
-
-.do span {
-  color: #03ce2f; /* Adjust the color to your preference */
-}
-
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
-  grid-template-rows: repeat(2, 1fr); /* Two rows with equal height */
-  grid-gap: 10px; /* Spacing between grid items */
-  width: 200%;
-}
-
-.grid-item {
-  background-color: transparent;
-  padding: 1vw 0 1vw 1vw;
-  text-align: left;
-}
-
-
-.grid-item h3{
-  text-align: left;
-  margin: 0  0;
-  font-size: 1.3VW !important;
-}
-
-.grid-item svg{
-  width:  3vw;
-  height: 3vw;
-  fill: $accents;
-}
-
-.grid-item p{
-  margin-top: 0.3vw;
-  font-family: $Poppins;
-  text-align: left;
-  line-height: 1.4;
-  font-size: .9vw;
-}
-
-.about.content.active::-webkit-scrollbar {
-  width: .3vw; /* Set the width of the scrollbar */
-}
-
-.about.content.active::-webkit-scrollbar-track {
-  width: 20px;
-  background: transparent; /* Set the background color of the track */
-}
-
-.about.content.active::-webkit-scrollbar-track:hover {
-  transition: 1s;
-  border-radius: 10px;
-  width: 20px;
-  background: $secondary; /* Set the background color of the track */
-}
-
-.about.content.active::-webkit-scrollbar-thumb:hover {
-  background-color: $accents;
-}
-
-.about.content.active::-webkit-scrollbar-thumb {
-  background-color: $secondary;
-}
-
-.transparent-scrollbar::-webkit-scrollbar-thumb {
-  background-color: transparent !important;
-}
-
-
-.cards {
-  justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  grid-template-rows: 1fr; 
-  grid-gap: .6vw; 
-  width: 200%;
-  padding-bottom: 10vh;
-}
-
-.card {
-
+.about.content.active.page-about{
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 13vh;
-  background-color: $secondary;
-  padding: 3em;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  border-radius: 10px; /* Soft corners */
-  margin: 0 0.5em; /* Adjust the margin as needed */
-  transition: transform 0.3s ease; /* Add a smooth transition on hover */
-
-}
-
-
-.card:hover {
-  transform: translateY(-10px); /* Add a slight lift on hover */
-}
-
-
-.card-title {
-  font-weight: bold;
-  font-family: $Poppins;
-  font-size: 1.2em; /* Adjust the font size as needed */
-  color: $text; /* Adjust the color as needed */
-}
-
-.card svg{
-  width:  3vw;
-  height: 3vw;
-  fill: $text;
-}
-
- mini{
-  font-size: 5em;
+  display: flex;
+  align-items: center; 
 }

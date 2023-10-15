@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+  document.getElementById('menu-button').addEventListener('click', function() {
+    document.getElementById('nav').classList.toggle('active');
+    document.getElementById('main').classList.toggle('active');
+  });
+  
+
   const aboutContent = document.querySelector('.about.content');
 
   aboutContent.addEventListener('mouseenter', function() {
