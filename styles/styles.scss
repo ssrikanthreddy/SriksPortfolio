@@ -160,6 +160,8 @@ body {
   }
 
   #main.active{
+    z-index: 2;
+    max-height: 100vh !important;
     margin-top: 40px;
     order: 4;
     display: block !important;
@@ -183,8 +185,9 @@ body {
     border-radius: 0vh !important;
   }
   
-  .navbar {
-    position: absolute;
+  .navbar{
+    z-index: 1;
+    position: fixed;
     right: 1em;
     bottom: 1em;
     gap: 3vh;
@@ -201,6 +204,7 @@ body {
   }
 
   .navbar svg{
+    z-index: 1 !important;
     height: 2em !important;
     width: 2em !important;
   }

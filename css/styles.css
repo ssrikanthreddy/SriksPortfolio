@@ -132,6 +132,8 @@ body {
     display: none !important;
   }
   #main.active {
+    z-index: 2;
+    max-height: 100vh !important;
     margin-top: 40px;
     order: 4;
     display: block !important;
@@ -152,7 +154,8 @@ body {
     border-radius: 0vh !important;
   }
   .navbar {
-    position: absolute;
+    z-index: 1;
+    position: fixed;
     right: 1em;
     bottom: 1em;
     gap: 3vh;
@@ -167,6 +170,7 @@ body {
     background-color: #232D3F;
   }
   .navbar svg {
+    z-index: 1 !important;
     height: 2em !important;
     width: 2em !important;
   }
