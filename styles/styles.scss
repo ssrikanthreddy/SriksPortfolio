@@ -136,7 +136,7 @@ body {
   }
 
  .links{
-  margin-top: 70px !important;
+    margin-top: 40px !important;
     flex-direction: row;
     align-items: center;
   }
@@ -184,29 +184,33 @@ body {
   }
   
   .navbar {
-    display: block !important;
     position: absolute;
-    width: 5.3vw !important;
-    right: 2vw !important;
-    height: 13vh;
-    bottom: 0vh;
-    gap: 0.7vw;
-    width: 5vw;
-    margin-top: auto;
-    margin-left: 1vh;
-    position: absolute;
-    top: 60vh;
-    right: 7.1vw;
-    padding-top: 1.5vh;
-    padding-bottom: 0.7vh;
-    border-radius: 6.25vh;
-    background-color: #232D3F;
-    display: flex;
+    right: 1em;
+    bottom: 1em;
+    gap: 3vh;
+    height: 17vh !important;
+    border-radius: 50px;
+    width: 4em;
+    padding: 2vw 0 2vw;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    background-color: $secondary;
   }
-  
+
+  .navbar svg{
+    height: 2em !important;
+    width: 2em !important;
+  }
+
+  #left, #right{
+    align-self: center;
+    margin: 0vw;
+    padding: 0vw;
+  }
+
   .nav {
     display:none !important;
     margin-left:0vh !important;
@@ -229,8 +233,7 @@ body {
   .col-intro {
     justify-content: left !important;
     padding-left: 0em !important;
-    width: 100%;
-    flex: 1;
+    width: 10px;
     flex-direction: row !important;
   }
 
