@@ -60,6 +60,7 @@ body {
 
 
 #visualizer {
+  position: relative;
   margin-left: 6vh;
   min-height: 80vh;
   display: flex;
@@ -142,9 +143,27 @@ body {
   }
   
   .navbar {
-    width: 100%;
-    margin-left: 0vh !important;
-    border-radius: 0vh !important;
+    display: block !important;
+    position: absolute;
+    width: 5.3vw !important;
+    right: 2vw !important;
+    height: 13vh;
+    bottom: 0vh;
+    gap: 0.7vw;
+    width: 5vw;
+    margin-top: auto;
+    margin-left: 1vh;
+    position: absolute;
+    top: 60vh;
+    right: 7.1vw;
+    padding-top: 1.5vh;
+    padding-bottom: 0.7vh;
+    border-radius: 6.25vh;
+    background-color: #232D3F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .nav {
@@ -427,27 +446,6 @@ header{
   padding-top: 1.2vh;
   padding-bottom: 0.7vh;
   border-radius: 6.25vh;
-  background-color: #232D3F;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar {
-  gap: 0.7vw;
-  width: 4vw;
-  margin-top: auto;
-  margin-left: 1vh;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-top: 1.5vh;
-  padding-bottom: 0.7vh;
-  border-radius: 6.25vh;
-  position: relative;
-  top: 0;
   background-color: #232D3F;
   display: flex;
   flex-direction: column;
