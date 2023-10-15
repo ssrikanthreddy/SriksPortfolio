@@ -124,6 +124,7 @@ body {
     margin-left: 0vh !important;
   }
   .nav.active {
+    width: 8vw;
     overflow: visible;
     background-color: #232D3F;
     height: 100%;
