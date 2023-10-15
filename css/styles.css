@@ -68,13 +68,14 @@ body {
 
 #menu-button {
   display: none !important;
-  position: relative;
-  align-self: flex-end;
+  position: absolute;
+  top: 1em; /* Adjust as needed */
+  right: 1em; /* Adjust as needed */
+  z-index: 999; /* Ensure it's above other elements */
   width: 3em;
   height: 3em;
   border-radius: 50%;
   background-color: #03ce2f; /* Your desired background color */
-  display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -106,6 +107,7 @@ body {
     display: block !important;
   }
   #side {
+    position: relative;
     border-radius: 0px !important;
   }
   .tab-sidebar {

@@ -82,13 +82,15 @@ body {
 
 #menu-button {
   display: none !important;
-  position: relative;
- align-self: flex-end;
+  position: absolute;
+  top: 1em; /* Adjust as needed */
+  right: 1em; /* Adjust as needed */
+  z-index: 999; /* Ensure it's above other elements */
   width: 3em;
   height: 3em;
   border-radius: 50%;
   background-color: $accents; /* Your desired background color */
-  display: flex;
+ 
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -110,6 +112,7 @@ body {
   }
 
   #visualizer{
+    
     border-radius: 0px;
     height: 100%;
     width: 100%;
@@ -127,6 +130,7 @@ body {
   }
   
   #side{
+    position: relative;
     border-radius: 0px !important;
   }
 
