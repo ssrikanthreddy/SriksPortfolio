@@ -84,14 +84,26 @@ body {
 
 @media (max-width: 1024px) {
   .profile-picture {
-    height: 200px !important;
-    width: 200px !important;
+    height: 150px !important;
+    width: 150px !important;
+  }
+  .name {
+    font-size: 30px !important;
+  }
+  .title, .tab {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px !important;
   }
   .mobile-bar {
+    margin-top: 40px;
     justify-content: center;
     display: flex !important;
     align-items: center;
     flex-direction: column;
+  }
+  .tab:hover {
+    color: #03ce2f;
+    transition: 0.3s ease-out;
   }
   .tab {
     align-content: center;
@@ -100,6 +112,7 @@ body {
     background-color: #1a1a1a;
   }
   .links {
+    margin-top: 70px !important;
     flex-direction: row;
     align-items: center;
   }
@@ -119,8 +132,13 @@ body {
     display: none !important;
   }
   #main.active {
+    margin-top: 40px;
     order: 4;
     display: block !important;
+  }
+  .download a {
+    margin-top: 10px !important;
+    font-size: 20px !important;
   }
   #side {
     overflow: hidden;
