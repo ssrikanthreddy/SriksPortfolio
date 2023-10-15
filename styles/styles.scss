@@ -162,17 +162,18 @@ body {
   #main.active{
     z-index: 2;
     max-height: 100vh !important;
-    margin-top: 40px;
+    margin-top: 20px;
     order: 4;
     display: block !important;
   }
 
   .download a{
-    margin-top: 10px !important;
+    margin-top: 5px !important;
     font-size: 20px !important;
   }
   
   #side{
+    width: 100vw !important;
     overflow: hidden;
     position: relative;
     border-radius: 0px !important;
@@ -237,7 +238,7 @@ body {
   .col-intro {
     justify-content: left !important;
     padding-left: 0em !important;
-    width: 10px;
+    width: 100vw  ;
     flex-direction: row !important;
   }
 
@@ -251,6 +252,7 @@ body {
 
   .details{
     width: auto;
+    margin-top: 0px !important;
   }
 
   .details p{
