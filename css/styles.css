@@ -80,7 +80,7 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1024px) {
   .links {
     flex-direction: column;
     align-items: center;
@@ -151,7 +151,7 @@ body {
     font-size: 2vw !important;
   }
 }
-@media (max-width: 1360px) and (max-width: 768px) {
+@media (max-width: 1024px) and (max-width: 768px) {
   .col-intro {
     justify-content: left !important;
     padding-left: 0em !important;
