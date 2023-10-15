@@ -37,7 +37,6 @@ link[rel=icon] {
 }
 
 body {
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +82,7 @@ body {
 
 @media (max-width: 1024px) {
   body {
-    background-color: #232D3F;
+    background-color: #1a1a1a;
   }
   .links {
     flex-direction: column;

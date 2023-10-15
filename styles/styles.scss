@@ -48,7 +48,6 @@ link[rel="icon"] {
 }
 
 body {
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,9 +97,9 @@ body {
 @media (max-width: 1024px) {
 
   body{
-    background-color: $secondary;
+    background-color: $primary;
   }
-  
+
  .links{
     flex-direction: column;
     align-items: center;
