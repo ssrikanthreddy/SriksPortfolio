@@ -155,9 +155,9 @@ body {
   }
   .navbar {
     z-index: 1;
-    position: fixed;
-    right: 1em;
-    bottom: 1em;
+    position: relative;
+    right: -17em;
+    bottom: -18em;
     gap: 3vh;
     height: 17vh !important;
     border-radius: 50px;
