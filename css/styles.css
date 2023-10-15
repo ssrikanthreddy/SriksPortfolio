@@ -191,6 +191,12 @@ body {
     height: 100%;
     display: block !important;
   }
+  .home.content h1 {
+    font-size: 10.66vw !important;
+  }
+  .home.content p {
+    font-size: 3vw !important;
+  }
   .about.content.active h2 {
     padding-left: 0vw !important;
     font-size: 3em !important;
