@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+
+
   document.getElementById('menu-button').addEventListener('click', function() {
   
     document.getElementById('main').classList.toggle('active');
@@ -45,16 +47,35 @@ document.addEventListener('DOMContentLoaded', function() {
         tab.classList.add('active');
 
         activeContent.classList.remove('active', 'roll-down');
-        activeContent.classList.add('roll-up');
         targetContent.classList.add('active', 'roll-down');
 
         // Triggering reflow to force the animation
         void targetContent.offsetWidth;
 
-        activeContent.classList.remove('roll-up');
         
       }
     });
   });
 
+});
+
+
+document.getElementById('right').addEventListener('click', function() {
+  var currentPage = document.querySelector('.content.active');
+  var nextPage = currentPage.nextElementSibling;
+
+  if (nextPage) {
+      currentPage.classList.remove('active');
+      nextPage.classList.add('active');
+  }
+});
+
+document.getElementById('left').addEventListener('click', function() {
+  var currentPage = document.querySelector('.content.active');
+  var prevPage = currentPage.previousElementSibling;
+
+  if (prevPage) {
+      currentPage.classList.remove('active');
+      prevPage.classList.add('active');
+  }
 });
