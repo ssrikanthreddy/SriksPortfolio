@@ -116,6 +116,10 @@ body {
 
 @media (max-width: 1024px) {
 
+  .home.content.active{
+    max-height: 100vh !important;
+  }
+
   .row-do{
       
       font-size:5vw !important;
@@ -229,7 +233,6 @@ body {
     border-radius: 50px;
     width: 4em;
     padding: 2vw 0 2vw;
-    display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -308,7 +311,9 @@ body {
 
   @media (max-width:768px) {
 
-    
+    .navbar{
+      display: flex !important;
+    }
     
     .row-cards{
       padding-bottom: 0vh !important;
