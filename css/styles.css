@@ -68,9 +68,9 @@ body {
 
 #menu-button {
   display: none !important;
-  position: absolute;
-  top: 1em; /* Adjust as needed */
-  right: 1em; /* Adjust as needed */
+  position: fixed;
+  right: 1em;
+  top: 1em;
   z-index: 999; /* Ensure it's above other elements */
   width: 3em;
   height: 3em;
@@ -100,6 +100,7 @@ body {
 
 @media (max-width: 1024px) {
   .profile-picture {
+    margin-top: 10px !important;
     height: 150px !important;
     width: 150px !important;
   }
