@@ -99,6 +99,9 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .about.content.active {
+    max-height: 100vh !important;
+  }
   .profile-picture {
     margin-top: 10px !important;
     height: 150px !important;
@@ -167,6 +170,7 @@ body {
   }
   #side {
     width: 100vw !important;
+    height: 100vh !important;
     overflow: hidden;
     position: relative;
     border-radius: 0px !important;
@@ -246,6 +250,16 @@ body {
   }
 }
 @media (max-width: 1024px) and (max-width: 768px) {
+  .row-do {
+    font-size: 5vw !important;
+  }
+  .row-cards {
+    padding-bottom: 0vh !important;
+    flex-direction: column !important;
+  }
+  .card {
+    margin-top: 1vh;
+  }
   .col-intro {
     justify-content: left !important;
     padding-left: 0em !important;
@@ -594,6 +608,60 @@ header {
 
 .mobile-bar {
   display: none;
+}
+
+.row-do {
+  margin-bottom: 3vh;
+  padding-left: 1vw;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 1.7vw;
+}
+
+.just-do {
+  color: #03ce2f;
+}
+
+.cards {
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.row-cards {
+  gap: 1vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2vh; /* Adjust as needed */
+  background-color: rgba(240, 240, 240, 0); /* Optional: Add background color for clarity */
+  padding: 0px 20px 20px 1vw; /* Optional: Add padding for clarity */
+  box-sizing: border-box; /* Optional: Include padding in width calculation */
+}
+
+.card {
+  flex-direction: column;
+  display: flex;
+}
+
+.card h3 {
+  margin: 0.4vw;
+}
+
+.card p {
+  margin: 0.3vw;
+}
+
+.row-cards svg {
+  padding-left: 0vw;
+  width: 5vh;
+  height: 5vh;
+  fill: #03ce2f;
+  transition: fill 0.5s;
 }
 
 /*# sourceMappingURL=styles.css.map */
