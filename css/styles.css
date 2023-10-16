@@ -170,14 +170,18 @@ body {
     margin-left: 0vh;
   }
   #main {
-    width: 400px !important;
     border-radius: 0px;
     display: none !important;
   }
   #main.active {
+    padding-top: 20px;
+    width: 300px !important;
+    right: 0;
+    position: absolute;
     z-index: 2;
+    height: 100vh;
     max-height: 100vh !important;
-    margin-top: 20px;
+    margin-top: 0px;
     order: 4;
     display: block !important;
   }
