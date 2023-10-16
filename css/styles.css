@@ -99,6 +99,9 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .row-do {
+    font-size: 5vw !important;
+  }
   .about.content.active {
     max-height: 100vh !important;
   }
@@ -248,17 +251,15 @@ body {
     margin-top: 0px;
     font-size: 2vw !important;
   }
+  .card {
+    margin-right: 3vw;
+    margin-top: 1vh;
+  }
 }
 @media (max-width: 1024px) and (max-width: 768px) {
-  .row-do {
-    font-size: 5vw !important;
-  }
   .row-cards {
     padding-bottom: 0vh !important;
     flex-direction: column !important;
-  }
-  .card {
-    margin-top: 1vh;
   }
   .col-intro {
     justify-content: left !important;
