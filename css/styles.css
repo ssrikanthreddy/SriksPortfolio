@@ -271,6 +271,7 @@ body {
     font-size: 3vw !important;
   }
   .card {
+    width: 100% !important;
     margin-right: 2vw;
     margin-top: 3vh;
   }
