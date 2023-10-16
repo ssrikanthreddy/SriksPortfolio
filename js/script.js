@@ -33,6 +33,17 @@ document.addEventListener('DOMContentLoaded', function() {
     aboutContent.classList.add('transparent-scrollbar');
   });
 
+  //Main scroll bar
+  const main = document.querySelector('#main');
+
+  main.addEventListener('mouseenter', function() {
+    main.classList.remove('transparent-scrollbar');
+  });
+  
+  main.addEventListener('mouseleave', function() {
+    main.classList.add('transparent-scrollbar');
+  });
+
   const tabs = document.querySelectorAll('.tab');
 
   tabs.forEach(tab => {
@@ -50,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Triggering reflow to force the animation
         void targetContent.offsetWidth;
-
         
       }
     });
@@ -82,23 +92,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-
-document.getElementById('right').addEventListener('click', function() {
-  var currentPage = document.querySelector('.content.active');
-  var nextPage = currentPage.nextElementSibling;
-
-  if (nextPage) {
-      currentPage.classList.remove('active');
-      nextPage.classList.add('active');
-  }
-});
-
-document.getElementById('left').addEventListener('click', function() {
-  var currentPage = document.querySelector('.content.active');
-  var prevPage = currentPage.previousElementSibling;
-
-  if (prevPage) {
-      currentPage.classList.remove('active');
-      prevPage.classList.add('active');
-  }
-});

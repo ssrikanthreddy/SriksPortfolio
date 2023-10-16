@@ -1,28 +1,28 @@
-.about.content.active::-webkit-scrollbar {
+.about.content.active::-webkit-scrollbar, #main::-webkit-scrollbar-thumb {
   width: 0.3vw; /* Set the width of the scrollbar */
 }
 
-.about.content.active::-webkit-scrollbar-track {
+.about.content.active::-webkit-scrollbar-track, #main::-webkit-scrollbar-thumb {
   width: 20px;
   background: transparent; /* Set the background color of the track */
 }
 
-.about.content.active::-webkit-scrollbar-track:hover {
+.about.content.active::-webkit-scrollbar-track:hover, #main::-webkit-scrollbar-thumb {
   transition: 1s;
   border-radius: 10px;
   width: 20px;
   background: #232D3F; /* Set the background color of the track */
 }
 
-.about.content.active::-webkit-scrollbar-thumb:hover {
+.about.content.active::-webkit-scrollbar-thumb:hover, #main::-webkit-scrollbar-thumb {
   background-color: #03ce2f;
 }
 
-.about.content.active::-webkit-scrollbar-thumb {
+.about.content.active::-webkit-scrollbar-thumb, #main::-webkit-scrollbar-thumb {
   background-color: #232D3F;
 }
 
-.transparent-scrollbar::-webkit-scrollbar-thumb {
+.transparent-scrollbar::-webkit-scrollbar-thumb, #main::-webkit-scrollbar-thumb {
   background-color: transparent !important;
 }
 
@@ -107,7 +107,7 @@ body {
     max-height: 100vh !important;
   }
   .row-do {
-    font-size: 5vw !important;
+    font-size: 8vw !important;
   }
   .about.content.active {
     max-height: 100vh !important;
@@ -174,6 +174,7 @@ body {
     display: none !important;
   }
   #main.active {
+    overflow: auto;
     padding-top: 20px;
     width: 300px !important;
     right: 0;
@@ -215,6 +216,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    display: flex !important;
     background-color: #232D3F;
   }
   .navbar svg {
@@ -266,11 +268,11 @@ body {
   }
   .details p {
     margin-top: 0px;
-    font-size: 2vw !important;
+    font-size: 3vw !important;
   }
   .card {
     margin-right: 2vw;
-    margin-top: 1vh;
+    margin-top: 3vh;
   }
 }
 @media (max-width: 1024px) and (max-width: 768px) {
@@ -290,16 +292,16 @@ body {
   }
   .bio {
     width: 100% !important;
-    font-size: 3vw !important;
+    font-size: 4vw !important;
   }
   .about.content.active h2 {
-    font-size: 6vw !important;
+    font-size: 10vw !important;
   }
   .details {
     width: auto;
   }
   .details p {
-    font-size: 3vw !important;
+    font-size: 4vw !important;
     line-height: 1.2 !important;
   }
 }
@@ -420,8 +422,8 @@ header {
 }
 
 .links svg {
-  width: 3vh;
-  height: 3vh;
+  width: 3.5vh;
+  height: 3.5vh;
   fill: white;
   transition: fill 0.5s;
 }
@@ -665,6 +667,7 @@ header {
 }
 
 .card {
+  width: 50%;
   flex-direction: column;
   display: flex;
 }
