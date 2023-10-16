@@ -3,9 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   document.getElementById('menu-button').addEventListener('click', function() {
-  
+    document.getElementById('menu-button').classList.toggle('cross');
     document.getElementById('main').classList.toggle('active');
-
   });
 
   function handleMobileClick() {
@@ -56,6 +55,30 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  const mobs = document.querySelectorAll('.mobile');
+
+  mobs.forEach(mob => {
+    mob.addEventListener('click', function() {
+      const activeMob = document.querySelector('.mobile.active');
+      const activeContent = document.querySelector('.content.active');
+      const targetContent = document.querySelector(`.${mob.id}.content`);
+
+      if (activeMob !== mob) {
+        activeMob.classList.remove('active');
+        mob.classList.add('active');
+
+        activeContent.classList.remove('active', 'roll-down');
+        targetContent.classList.add('active', 'roll-down');
+
+        // Triggering reflow to force the animation
+        void targetContent.offsetWidth;
+      }
+    });
+  });
+
+  
+  
 
 });
 
