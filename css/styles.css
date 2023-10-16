@@ -102,6 +102,10 @@ body {
   .home.content.active {
     max-height: 100vh !important;
   }
+  .home.content.active p {
+    margin-bottom: 20vh !important;
+    max-height: 100vh !important;
+  }
   .row-do {
     font-size: 5vw !important;
   }

@@ -120,6 +120,11 @@ body {
     max-height: 100vh !important;
   }
 
+  .home.content.active p{
+    margin-bottom: 20vh !important;
+    max-height: 100vh !important;
+  }
+
   .row-do{
       
       font-size:5vw !important;
@@ -209,6 +214,7 @@ body {
   }
   
   #side{
+    
     width: 100vw !important;
     height: 100vh !important;
     overflow: hidden;
