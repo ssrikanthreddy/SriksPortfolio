@@ -1,10 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-  var menuButton = document.getElementById('menu-button');
-  console.log(menuButton);
-  simulateClick(menuButton);
-
-
   document.getElementById('menu-button').addEventListener('click', function() {
     document.getElementById('menu-button').classList.toggle('cross');
     document.getElementById('main').classList.toggle('active');
@@ -93,9 +88,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('right').addEventListener('click', function() {
     var currentPage = document.querySelector('.content.active');
-    console.log(currentPage); // Check if this logs the correct element
+    //console.log(currentPage); // Check if this logs the correct element
     var nextPage = currentPage.nextElementSibling;
-    console.log(nextPage);
+    //console.log(nextPage);
   
     if (nextPage && !nextPage.classList.contains('ignore')) {
       currentPage.classList.toggle('active');
@@ -108,9 +103,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('left').addEventListener('click', function() {
     var currentPage = document.querySelector('.content.active');
-    console.log(currentPage); // Check if this logs the correct element
+    //console.log(currentPage); // Check if this logs the correct element
     var prevPage = currentPage.previousElementSibling;
-    console.log(prevPage);
+    //console.log(prevPage);
   
     if (prevPage) {
       currentPage.classList.toggle('active');
@@ -121,18 +116,3 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 });
-
-
-
-var simulateClick = function (elem) {
-	// Create our event (with options)
-	var evt = new MouseEvent('click', {
-		bubbles: true,
-		cancelable: true,
-		view: window
-	});
-	// If cancelled, don't dispatch our event
-	var canceled = !elem.dispatchEvent(evt);
-};
-
-simulateClick(document.getElementById('menu-button'));
