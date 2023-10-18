@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
 
-
   document.getElementById('menu-button').addEventListener('click', function() {
     document.getElementById('menu-button').classList.toggle('cross');
     document.getElementById('main').classList.toggle('active');
@@ -87,8 +86,35 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+
+  document.getElementById('right').addEventListener('click', function() {
+    var currentPage = document.querySelector('.content.active');
+    console.log(currentPage); // Check if this logs the correct element
+    var nextPage = currentPage.nextElementSibling;
+    console.log(nextPage);
   
+    if (nextPage && !nextPage.classList.contains('ignore')) {
+      currentPage.classList.toggle('active');
+      currentPage.classList.toggle('roll-down');
+      nextPage.classList.toggle('active');
+      nextPage.classList.toggle('roll-down');
+    }
+  });
+
+
+  document.getElementById('left').addEventListener('click', function() {
+    var currentPage = document.querySelector('.content.active');
+    console.log(currentPage); // Check if this logs the correct element
+    var prevPage = currentPage.previousElementSibling;
+    console.log(prevPage);
   
+    if (prevPage) {
+      currentPage.classList.toggle('active');
+      currentPage.classList.toggle('roll-down');
+      prevPage.classList.toggle('active');
+      prevPage.classList.toggle('roll-down');
+    }
+  });
 
 });
 

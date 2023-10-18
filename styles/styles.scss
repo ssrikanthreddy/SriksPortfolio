@@ -252,7 +252,7 @@ body {
     height: 17vh !important;
     border-radius: 50px;
     width: 4em;
-    padding: 2vw 0 2vw;
+    
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -261,6 +261,7 @@ body {
   }
 
   .navbar svg{
+    fill: white;
     z-index: 1 !important;
     height: 2em !important;
     width: 2em !important;
@@ -309,7 +310,7 @@ body {
     margin-top: 0px;
     margin-right: 7vw ;
     width: 50% !important;
-    font-size: 2vw !important;
+    font-size: 2.3vw !important;
   }
 
 
@@ -320,23 +321,44 @@ body {
 
   .details p{
     margin-top: 0px;
-    font-size: 3vw !important;
+    font-size: 2.3vw !important;
   }
 
   .card{
+    font-size: 3vw;
     width: 100%  !important;
     margin-right: 2vw;
     margin-top: 3vh;
   }
+
+  .row-cards{
+    margin-right: 2vw;
+    padding-bottom: 0vh !important;
+    flex-direction: column !important;
+  }
+
+  .arrow {
+    padding: 0vh;
+    margin-bottom: 0vh;
+    cursor: pointer;
+  }
   
 
   @media (max-width:768px) {
+
+    .card{
+      font-size: 4vw;
+      width: 100%  !important;
+      margin-right: 2vw;
+      margin-top: 3vh;
+    }
 
     .navbar{
       display: flex !important;
     }
     
     .row-cards{
+      margin-right: 2vw;
       padding-bottom: 0vh !important;
       flex-direction: column !important;
     }
@@ -424,7 +446,7 @@ h1 {
   margin-top: 0px;
   font-family: $Poppins;
   font-size: 1vw;
-  line-height: 1.6;
+  line-height: 2.3;
   color: $text;
 }
 
@@ -654,7 +676,7 @@ header{
   justify-content: space-between;
   flex: 1;
   flex-direction: row;
-  padding: 20px;
+  padding: 1vw;
   background-color: transparent;
   border-radius: 10px;
 }
@@ -743,7 +765,7 @@ header{
   justify-content: space-between;
   margin-bottom: 2vh; /* Adjust as needed */
   background-color: #f0f0f000; /* Optional: Add background color for clarity */
-  padding: 0px 20px 20px 1vw; /* Optional: Add padding for clarity */
+  padding: 0px 5px 20px 1vw; /* Optional: Add padding for clarity */
   box-sizing: border-box; /* Optional: Include padding in width calculation */
 }
 
@@ -767,4 +789,42 @@ header{
   height: 5vh;
   fill: $accents;
   transition: fill 0.5s;
+}
+
+
+
+//Resume Page styles
+.cv.content.active h2{
+  padding-left: 1vw;
+  font-family: $Poppins;
+  display: flex;
+  color: $text;
+  font-size: 2.5vw;
+  margin-bottom: 0vw;
+}
+
+
+//Projects Page Styles
+.projects.content.active h2{
+  padding-left: 1vw;
+  font-family: $Poppins;
+  display: flex;
+  color: $text;
+  font-size: 2.5vw;
+  margin-bottom: 0vw;
+}
+
+
+//contact Page Styles
+.contact.content.active h2{
+  padding-left: 1vw;
+  font-family: $Poppins;
+  display: flex;
+  color: $text;
+  font-size: 2.5vw;
+  margin-bottom: 0vw;
+}
+
+.contact.content.active span {
+  color: $accents;
 }
