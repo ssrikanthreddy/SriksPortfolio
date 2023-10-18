@@ -752,6 +752,24 @@ header{
   color: $accents;
 }
 
+a.email-link {
+  color: #a3abb3; /* Change the color to your preference */
+  text-decoration: none; /* Remove default underline */
+  font-weight: bold; /* Optionally, make the text bold */
+}
+
+/* Apply hover effect */
+a.email-link:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #ffffff; /* Change color on hover to your preference */
+}
+a:-webkit-any-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
 .about.content.active.page-about.col-intro.details p{
   font-size: 1.1vw;
 }
