@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+  var menuButton = document.getElementById('menu-button');
+  console.log(menuButton);
+  simulateClick(menuButton);
+
 
   document.getElementById('menu-button').addEventListener('click', function() {
     document.getElementById('menu-button').classList.toggle('cross');
@@ -118,3 +122,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+
+
+var simulateClick = function (elem) {
+	// Create our event (with options)
+	var evt = new MouseEvent('click', {
+		bubbles: true,
+		cancelable: true,
+		view: window
+	});
+	// If cancelled, don't dispatch our event
+	var canceled = !elem.dispatchEvent(evt);
+};
+
+simulateClick(document.getElementById('menu-button'));

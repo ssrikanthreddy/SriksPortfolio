@@ -166,7 +166,7 @@ body {
   }
   .links {
     gap: 3vw !important;
-    margin-top: 20px !important;
+    margin-top: 2vh !important;
     flex-direction: row;
     align-items: center;
   }
@@ -196,7 +196,7 @@ body {
     overflow: hidden;
     padding-bottom: 30vh !important;
     padding-top: 20px;
-    width: 250px !important;
+    width: 275px !important;
     right: 0;
     position: absolute;
     z-index: 2;
