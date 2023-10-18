@@ -99,6 +99,18 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .cv.content.active h2 {
+    font-size: 10vw !important;
+  }
+  .projects.content.active h2 {
+    font-size: 10vw !important;
+  }
+  .contact.content.active h2 {
+    font-size: 10vw !important;
+  }
+  .contact.content.active span {
+    color: #03ce2f;
+  }
   .home.content.active {
     max-height: 100vh !important;
   }
@@ -107,6 +119,8 @@ body {
     max-height: 100vh !important;
   }
   .row-do {
+    margin-bottom: 0vh !important;
+    margin-top: 7vh;
     font-size: 8vw !important;
   }
   .about.content.active {
