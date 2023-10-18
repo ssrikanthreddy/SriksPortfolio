@@ -161,6 +161,7 @@ body {
     align-content: center;
   }
   body {
+    overflow: hidden;
     background-color: #1a1a1a;
   }
   .links {
