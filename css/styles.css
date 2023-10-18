@@ -373,6 +373,7 @@ body {
 }
 
 #side {
+  height: 86.5%;
   flex: 1;
   background-color: #1a1a1a;
   padding: 1.3125rem 1.5vh 8.75vh 4.375vh;
@@ -675,6 +676,10 @@ header {
   color: #03ce2f;
 }
 
+.page-about {
+  height: 70vh;
+}
+
 .about.content.active.page-about {
   flex-direction: column;
   display: flex;
@@ -733,7 +738,7 @@ header {
 }
 
 .row-cards svg {
-  padding-left: 0vw;
+  padding-left: 0.5vw;
   width: 5vh;
   height: 5vh;
   fill: #03ce2f;
