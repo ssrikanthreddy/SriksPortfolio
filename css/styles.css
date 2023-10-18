@@ -42,6 +42,7 @@ body {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to bottom, #02797f, #043d40);
+  background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   margin: 0;
