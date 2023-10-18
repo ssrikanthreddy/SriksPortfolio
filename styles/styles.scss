@@ -143,7 +143,7 @@ body {
   }
 
   .home.content.active p{
-    margin-bottom: 20vh !important;
+    margin-bottom: 10vh !important;
     max-height: 100% !important;
   }
 
@@ -179,7 +179,7 @@ body {
 
   
   .mobile-bar{
-    margin-top: 20px;
+    margin-top: 60px;
     justify-content: center;
     display: flex !important;
     align-items: center;
@@ -208,7 +208,7 @@ body {
 
  .links{
     gap: 3vw !important;
-    margin-top: 20vh !important;
+    margin-top: 12vh !important;
     flex-direction: row;
     align-items: center;
   }
@@ -383,6 +383,11 @@ body {
   
 
   @media (max-width:768px) {
+
+    .mobile-bar{
+      margin-top: 20px;
+     
+    }
 
     .links{
       gap: 3vw !important;
