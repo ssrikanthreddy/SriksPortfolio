@@ -163,15 +163,22 @@ body {
   }
 
   .name{
-    font-size: 30px !important;
+    font-size: 25px !important;
   }
 
-  .title, .mobile{
+  .title{
+    font-family: $Poppins;
+    font-size: 14px !important;
+  }
+
+  .mobile{
     font-family: $Poppins;
     font-size: 20px !important;
   }
+
+  
   .mobile-bar{
-    margin-top: 40px;
+    margin-top: 20px;
     justify-content: center;
     display: flex !important;
     align-items: center;
@@ -231,9 +238,10 @@ body {
   }
 
   #main.active{
-    overflow: auto;
+    overflow: hidden;
+    padding-bottom: 30vh !important;
     padding-top: 20px;
-    width: 300px !important;
+    width: 250px !important;
     right: 0;
     position: absolute;
     z-index: 2;
@@ -246,7 +254,7 @@ body {
 
   .download a{
     margin-top: 5px !important;
-    font-size: 25px !important;
+    font-size: 20px !important;
   }
   
   #side{
@@ -356,7 +364,7 @@ body {
   .row-cards{
     margin-right: 2vw;
     padding-bottom: 0vh !important;
-    flex-direction: column !important;
+    flex-direction: row !important;
   }
 
   .arrow {
