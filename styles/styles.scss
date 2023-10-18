@@ -8,27 +8,27 @@ $vis-width: 76vw;
 
 //Scrollbar
 
-.about.content.active::-webkit-scrollbar, #main::-webkit-scrollbar-thumb {
+::-webkit-scrollbar, #main::-webkit-scrollbar-thumb {
   width: .3vw; /* Set the width of the scrollbar */
 }
 
-.about.content.active::-webkit-scrollbar-track, #main::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-track, #main::-webkit-scrollbar-thumb {
   width: 20px;
   background: transparent; /* Set the background color of the track */
 }
 
-.about.content.active::-webkit-scrollbar-track:hover,#main::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-track:hover,#main::-webkit-scrollbar-thumb {
   transition: 1s;
   border-radius: 10px;
   width: 20px;
   background: $secondary; /* Set the background color of the track */
 }
 
-.about.content.active::-webkit-scrollbar-thumb:hover,#main::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:hover,#main::-webkit-scrollbar-thumb {
   background-color: $accents;
 }
 
-.about.content.active::-webkit-scrollbar-thumb, #main::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb, #main::-webkit-scrollbar-thumb {
   background-color: $secondary;
 }
 
@@ -49,6 +49,7 @@ link[rel="icon"] {
 }
 
 body {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -284,9 +285,9 @@ body {
   
   .navbar{
     z-index: 1;
-    position: fixed;
-    right: 1em;
-    bottom: 1em;
+    position: fixed !important;
+    right: 1em !important; 
+    bottom: 1em !important;
     gap: 3vh;
     height: 17vh !important;
     border-radius: 50px;
@@ -863,6 +864,29 @@ a:-webkit-any-link {
   transition: fill 0.5s;
 }
 
+.navbar{
+  width: 4vw;
+  margin-left: 1vh;
+  z-index: 1;
+  position: absolute;
+  bottom: 0vh;
+  gap: 3vh;
+  height: 17vh;
+  border-radius: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: $secondary;
+}
+
+.navbar svg{
+  fill: white;
+  z-index: 1 ;
+  height: 2vw ;
+  width: 2vw ;
+}
+
 
 
 //Resume Page styles
@@ -873,6 +897,11 @@ a:-webkit-any-link {
   color: $text;
   font-size: 2.5vw;
   margin-bottom: 0vw;
+}
+
+.page-cv{
+  overflow: auto;
+  padding-left: 1vw;
 }
 
 

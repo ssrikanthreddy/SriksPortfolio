@@ -1,24 +1,24 @@
-.about.content.active::-webkit-scrollbar, #main::-webkit-scrollbar-thumb {
+::-webkit-scrollbar, #main::-webkit-scrollbar-thumb {
   width: 0.3vw; /* Set the width of the scrollbar */
 }
 
-.about.content.active::-webkit-scrollbar-track, #main::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-track, #main::-webkit-scrollbar-thumb {
   width: 20px;
   background: transparent; /* Set the background color of the track */
 }
 
-.about.content.active::-webkit-scrollbar-track:hover, #main::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-track:hover, #main::-webkit-scrollbar-thumb {
   transition: 1s;
   border-radius: 10px;
   width: 20px;
   background: #232D3F; /* Set the background color of the track */
 }
 
-.about.content.active::-webkit-scrollbar-thumb:hover, #main::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:hover, #main::-webkit-scrollbar-thumb {
   background-color: #03ce2f;
 }
 
-.about.content.active::-webkit-scrollbar-thumb, #main::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb, #main::-webkit-scrollbar-thumb {
   background-color: #232D3F;
 }
 
@@ -38,6 +38,7 @@ link[rel=icon] {
 }
 
 body {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,9 +233,9 @@ body {
   }
   .navbar {
     z-index: 1;
-    position: fixed;
-    right: 1em;
-    bottom: 1em;
+    position: fixed !important;
+    right: 1em !important;
+    bottom: 1em !important;
     gap: 3vh;
     height: 17vh !important;
     border-radius: 50px;
@@ -764,6 +765,29 @@ a:-webkit-any-link {
   transition: fill 0.5s;
 }
 
+.navbar {
+  width: 4vw;
+  margin-left: 1vh;
+  z-index: 1;
+  position: absolute;
+  bottom: 0vh;
+  gap: 3vh;
+  height: 17vh;
+  border-radius: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #232D3F;
+}
+
+.navbar svg {
+  fill: white;
+  z-index: 1;
+  height: 2vw;
+  width: 2vw;
+}
+
 .cv.content.active h2 {
   padding-left: 1vw;
   font-family: "Poppins", sans-serif;
@@ -771,6 +795,11 @@ a:-webkit-any-link {
   color: #ffffff;
   font-size: 2.5vw;
   margin-bottom: 0vw;
+}
+
+.page-cv {
+  overflow: auto;
+  padding-left: 1vw;
 }
 
 .projects.content.active h2 {
