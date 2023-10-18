@@ -178,6 +178,10 @@ body {
     font-family: $Poppins;
     font-size: 20px !important;
   }
+  
+  .mobile.active{
+    color: $accents !important;
+  }
 
   
   .mobile-bar{
@@ -284,14 +288,14 @@ body {
   }
   
   .navbar{
-    z-index: 1;
+    z-index: 1 !important;
     position: fixed !important;
     right: 1em !important; 
     bottom: 1em !important;
     gap: 3vh;
     height: 17vh !important;
     border-radius: 50px;
-    width: 4em;
+    width: 3.5em !important;
     
     flex-direction: column;
     align-items: center;
@@ -595,6 +599,7 @@ header{
   border: 0.176vh solid #ffffff;
   border-radius: 2.5vh;
   transition: background-color 0.3s;
+  text-decoration: none !important;
 }
 
 .download a:hover {
@@ -606,6 +611,10 @@ header{
   margin-bottom: 0.625vh;
   color: #ffffff;
   cursor: pointer;
+}
+
+.tab.active svg {
+  fill: $accents !important;
 }
 
 .tab svg {
@@ -869,7 +878,8 @@ a:-webkit-any-link {
   margin-left: 1vh;
   z-index: 1;
   position: absolute;
-  bottom: 0vh;
+  bottom: 10vh;
+  right: 7.5vw;
   gap: 3vh;
   height: 17vh;
   border-radius: 50px;
@@ -885,6 +895,11 @@ a:-webkit-any-link {
   z-index: 1 ;
   height: 2vw ;
   width: 2vw ;
+}
+
+.navbar svg:hover {
+  fill: $accents;
+  transition: 0.3s;
 }
 
 

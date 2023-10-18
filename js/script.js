@@ -18,8 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
   handleMobileClick();
 
 
-  
-  
 
   const aboutContent = document.querySelector('.about.content');
 
@@ -70,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
     mob.addEventListener('click', function() {
       const activeMob = document.querySelector('.mobile.active');
       const activeContent = document.querySelector('.content.active');
-      const targetContent = document.querySelector(`.${mob.id}.content`);
+      const targetContent = document.querySelector(`.${mob.id.slice(1)}.content`);
 
       if (activeMob !== mob) {
         activeMob.classList.remove('active');
@@ -88,31 +86,69 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('right').addEventListener('click', function() {
     var currentPage = document.querySelector('.content.active');
-    //console.log(currentPage); // Check if this logs the correct element
-    var nextPage = currentPage.nextElementSibling;
-    //console.log(nextPage);
+    var currTab = document.querySelector('.tab.active');
+    var currMob = document.querySelector('.mobile.active');
+    var nextMob;
+    var nextPage;
+    var nextTab;
+    var nextTabId;
   
-    if (nextPage && !nextPage.classList.contains('ignore')) {
+    nextPage = currentPage.nextElementSibling;
+    if (!nextPage){
+      const section = document.querySelector('#side'); // Select the section element
+      if (section) nextPage = section.firstElementChild; 
+       nextTabId = nextPage.classList[1];
+      }
+    else{
+       nextTabId = nextPage.classList[1];
+      }
+
+    nextTab = document.getElementById(nextTabId);
+    nextMob = document.getElementById("m"+nextTabId);
+  
+    if (nextPage) {
+      currTab.classList.toggle('active');
       currentPage.classList.toggle('active');
       currentPage.classList.toggle('roll-down');
       nextPage.classList.toggle('active');
       nextPage.classList.toggle('roll-down');
+      nextTab.classList.toggle('active');
+      currMob.classList.toggle('active');
+      nextMob.classList.toggle('active');
     }
   });
 
 
   document.getElementById('left').addEventListener('click', function() {
     var currentPage = document.querySelector('.content.active');
-    //console.log(currentPage); // Check if this logs the correct element
-    var prevPage = currentPage.previousElementSibling;
-    //console.log(prevPage);
+    var currTab = document.querySelector('.tab.active');
+    var currMob = document.querySelector('.mobile.active');
+    var prevMob;
+    var prevPage;
+    var prevTab;
+    var prevTabId;
   
+    prevPage = currentPage.previousElementSibling;
+    if (!prevPage){
+      const section = document.querySelector('#side'); // Select the section element
+      if (section) prevPage = section.lastElementChild; 
+       prevTabId = prevPage.classList[1];
+      }
+    else prevTabId = prevPage.classList[1];
+      
+    prevTab = document.getElementById(prevTabId);
+    prevMob = document.getElementById('m'+prevTabId)
+
     if (prevPage) {
+      currTab.classList.toggle('active');
       currentPage.classList.toggle('active');
       currentPage.classList.toggle('roll-down');
       prevPage.classList.toggle('active');
       prevPage.classList.toggle('roll-down');
+      prevTab.classList.toggle('active');
+      currMob.classList.toggle('active');
+      prevMob.classList.toggle('active');
     }
-  });
+  }); 
 
 });
