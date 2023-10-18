@@ -37,6 +37,7 @@ $vis-width: 76vw;
 }
 
 body, html {
+  -webkit-tap-highlight-color: transparent;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -54,7 +55,7 @@ body {
   background: linear-gradient(to bottom, #02797f, #043d40);
   //background: url("../assets/grad.jpeg");
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   margin: 0;
 }
 
@@ -138,12 +139,12 @@ body {
   }
 
   .home.content.active{
-    max-height: 100vh !important;
+    max-height: 100% !important;
   }
 
   .home.content.active p{
     margin-bottom: 20vh !important;
-    max-height: 100vh !important;
+    max-height: 100% !important;
   }
 
   .row-do{
@@ -153,7 +154,7 @@ body {
     }
 
   .about.content.active {
-    max-height: 100vh !important;
+    max-height: 100% !important;
   }
 
   .profile-picture{
@@ -200,13 +201,14 @@ body {
   }
 
   body{
+    height: 100%;
     overflow: hidden;
     background-color: $primary;
   }
 
  .links{
     gap: 3vw !important;
-    margin-top: 2vh !important;
+    margin-top: 20vh !important;
     flex-direction: row;
     align-items: center;
   }
@@ -239,6 +241,7 @@ body {
   }
 
   #main.active{
+    height: 100%;
     overflow: hidden;
     padding-bottom: 30vh !important;
     padding-top: 20px;
@@ -246,8 +249,8 @@ body {
     right: 0;
     position: absolute;
     z-index: 2;
-    height: 100vh;
-    max-height: 100vh !important;
+    height: 100%;
+    max-height: 100% !important;
     margin-top: 00px;
     order: 4;
     display: block !important;
@@ -257,11 +260,15 @@ body {
     margin-top: 5px !important;
     font-size: 20px !important;
   }
+
+  .page-about{
+    height: 100% !important;
+  }
   
   #side{
     
     width: 100vw !important;
-    height: 100vh !important;
+    height: 100% !important;
     overflow: hidden;
     position: relative;
     border-radius: 0px !important;
@@ -376,6 +383,11 @@ body {
   
 
   @media (max-width:768px) {
+
+    .links{
+      gap: 3vw !important;
+      margin-top: 2vh !important;
+    }
 
     .card{
       font-size: 4vw;
