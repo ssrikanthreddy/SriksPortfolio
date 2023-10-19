@@ -57,7 +57,7 @@ body {
   flex-wrap: wrap;
   border-radius: 4.375vh;
   height: 80vh;
-  width: 76vw;
+  width: 70vw;
   overflow: hidden;
   background-color: #232D3F;
 }
@@ -110,6 +110,30 @@ body {
     margin-top: 0vh;
     font-size: 10vw !important;
   }
+  .page-projects {
+    padding-right: 3vw !important;
+  }
+  .container h4 {
+    color: #03ce2f;
+    font-size: 5vw !important;
+  }
+  .container p {
+    color: #ffffff;
+    font-size: 2vw !important;
+  }
+  .cardd {
+    margin-bottom: 6vh !important;
+  }
+  .link-buttons {
+    gap: 3vw !important;
+  }
+  .link-buttons a {
+    font-size: 3vw !important;
+    border: 0.176vh solid #ffffff;
+  }
+  .cardd:hover {
+    box-shadow: none !important;
+  }
   .contact.content.active h2 {
     margin-top: 0vh;
     font-size: 10vw !important;
@@ -131,7 +155,7 @@ body {
     font-size: 8vw !important;
   }
   .about.content.active {
-    padding-right: 10vw;
+    padding-right: 12vw;
     max-height: 100% !important;
   }
   .profile-picture {
@@ -382,7 +406,7 @@ body {
   overflow: auto;
   display: block;
   max-height: 80vh;
-  width: 22vw;
+  width: 20vw;
   background-color: #232D3F;
   padding: 0vw 0vw 0vw 0vw;
   margin: 0;
@@ -796,7 +820,7 @@ a:-webkit-any-link {
   z-index: 1;
   position: absolute;
   bottom: 10vh;
-  right: 8vw;
+  right: 11vw;
   gap: 3vh;
   height: 17vh;
   border-radius: 50px;
@@ -833,6 +857,22 @@ a:-webkit-any-link {
   padding-left: 1vw;
 }
 
+.projects.content.active {
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  margin-bottom: 0vw;
+  margin-right: 0px;
+  width: fit-content;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .projects.content.active h2 {
   padding-left: 1vw;
   font-family: "Poppins", sans-serif;
@@ -840,6 +880,67 @@ a:-webkit-any-link {
   color: #ffffff;
   font-size: 2.5vw;
   margin-bottom: 0vw;
+}
+
+.page-projects {
+  margin-top: 4vh;
+  padding-right: 1vw;
+}
+
+.cardd {
+  margin: 0 1vw 1vw 0;
+  background-color: #232D3F;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.cardd img {
+  flex: 1;
+}
+
+/* On mouse-over, add a deeper shadow */
+.cardd:hover {
+  box-shadow: 0 8px 16px 0 #03ce2f;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.container h4 {
+  margin: 0vw 0vw 0vw 0vw;
+  color: #03ce2f;
+  font-size: 2vw;
+}
+
+.container p {
+  color: #ffffff;
+  font-size: 1vw;
+}
+
+.link-buttons {
+  width: 100%;
+  gap: 2vw;
+  justify-items: center;
+  justify-content: center;
+}
+
+.link-buttons a {
+  margin-top: 1.1vw;
+  margin-bottom: 2vw;
+  display: inline-block;
+  padding: 0.625vh 2.5vh;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9vw;
+  border: 0.176vh solid #ffffff;
+  border-radius: 0vh;
+  transition: background-color 0.3s;
+  text-decoration: none !important;
 }
 
 .contact.content.active h2 {

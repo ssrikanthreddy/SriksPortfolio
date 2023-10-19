@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
   handleMobileClick();
 
 
-
+  //Active scroll for about
   const aboutContent = document.querySelector('.about.content');
 
   aboutContent.addEventListener('mouseenter', function() {
@@ -28,6 +28,19 @@ document.addEventListener('DOMContentLoaded', function() {
   aboutContent.addEventListener('mouseleave', function() {
     aboutContent.classList.add('transparent-scrollbar');
   });
+
+   //Active scroll for projects
+   const projectsContent = document.querySelector('.projects.content');
+
+   projectsContent.addEventListener('mouseenter', function() {
+    projectsContent.classList.remove('transparent-scrollbar');
+   });
+   
+   projectsContent.addEventListener('mouseleave', function() {
+     projectsContent.classList.add('transparent-scrollbar');
+   });
+
+   
 
   //Main scroll bar
   const main = document.querySelector('#main');
@@ -39,6 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
   main.addEventListener('mouseleave', function() {
     main.classList.add('transparent-scrollbar');
   });
+
+  
 
   const tabs = document.querySelectorAll('.tab');
 
