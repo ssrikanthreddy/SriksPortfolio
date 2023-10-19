@@ -103,18 +103,22 @@ body {
 
 @media (max-width: 1024px) {
   .cv.content.active h2 {
+    margin-top: 0vh;
     font-size: 10vw !important;
   }
   .projects.content.active h2 {
+    margin-top: 0vh;
     font-size: 10vw !important;
   }
   .contact.content.active h2 {
+    margin-top: 0vh;
     font-size: 10vw !important;
   }
   .contact.content.active span {
     color: #03ce2f;
   }
   .home.content.active {
+    padding-right: 3vw !important;
     max-height: 100% !important;
   }
   .home.content.active p {
@@ -127,6 +131,7 @@ body {
     font-size: 8vw !important;
   }
   .about.content.active {
+    padding-right: 10vw;
     max-height: 100% !important;
   }
   .profile-picture {
@@ -222,6 +227,8 @@ body {
     height: 100% !important;
   }
   #side {
+    padding-right: 0.5vw !important;
+    padding-top: 1em !important;
     width: 100vw !important;
     height: 100% !important;
     overflow: hidden;
@@ -278,8 +285,9 @@ body {
     font-size: 3vw !important;
   }
   .about.content.active h2 {
+    margin-top: 0vh;
     padding-left: 0vw !important;
-    font-size: 3em !important;
+    font-size: 10vw !important;
   }
   .col-intro {
     justify-content: left !important;
@@ -291,7 +299,7 @@ body {
     margin-top: 0px;
     margin-right: 7vw;
     width: 50% !important;
-    font-size: 2.3vw !important;
+    font-size: 2.66vw !important;
   }
   .details {
     width: auto;
