@@ -3,7 +3,7 @@ $secondary: #232D3F;
 $accents: #03ce2f;
 $text: #ffffff;
 $Poppins: 'Poppins', sans-serif;
-$main-width: 22vw;
+$main-width: 21vw;
 $vis-width: 76vw;
 
 //Scrollbar
@@ -225,8 +225,8 @@ body {
   }
 
   .links svg {
-    width: 4vh !important;
-    height: 4vh !important;
+    width: 2em !important;
+    height: 2em !important;
     fill: white;
     transition: fill 0.5s;
   }
@@ -397,6 +397,12 @@ body {
   .navbar:hover svg{
     fill: $text !important;
   }
+
+  @media (max-height: 620px){
+    #main.active{
+      overflow: auto;
+    }
+  }
   
 
   @media (max-width:768px) {
@@ -462,6 +468,7 @@ body {
 }
 
 #main {
+  overflow: auto;
   display: block;
   max-height: 80vh;
   width: $main-width;
@@ -582,8 +589,8 @@ header{
 }
 
 .links svg {
-  width: 3.5vh;
-  height: 3.5vh;
+  width: 2em;
+  height: 2em;
   fill: white;
   transition: fill 0.5s;
 }
@@ -878,8 +885,8 @@ a:-webkit-any-link {
 
 .row-cards svg {
   padding-left: .5vw;
-  width: 5vh;
-  height: 5vh;
+  width: 3em;
+  height: 3em;
   fill: $accents;
   transition: fill 0.5s;
 }

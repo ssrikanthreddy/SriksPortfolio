@@ -183,8 +183,8 @@ body {
     align-items: center;
   }
   .links svg {
-    width: 4vh !important;
-    height: 4vh !important;
+    width: 2em !important;
+    height: 2em !important;
     fill: white;
     transition: fill 0.5s;
   }
@@ -329,6 +329,11 @@ body {
     fill: #ffffff !important;
   }
 }
+@media (max-width: 1024px) and (max-height: 620px) {
+  #main.active {
+    overflow: auto;
+  }
+}
 @media (max-width: 1024px) and (max-width: 768px) {
   .mobile-bar {
     margin-top: 20px;
@@ -374,9 +379,10 @@ body {
   }
 }
 #main {
+  overflow: auto;
   display: block;
   max-height: 80vh;
-  width: 22vw;
+  width: 21vw;
   background-color: #232D3F;
   padding: 0vw 0vw 0vw 0vw;
   margin: 0;
@@ -491,8 +497,8 @@ header {
 }
 
 .links svg {
-  width: 3.5vh;
-  height: 3.5vh;
+  width: 2em;
+  height: 2em;
   fill: white;
   transition: fill 0.5s;
 }
@@ -778,8 +784,8 @@ a:-webkit-any-link {
 
 .row-cards svg {
   padding-left: 0.5vw;
-  width: 5vh;
-  height: 5vh;
+  width: 3em;
+  height: 3em;
   fill: #03ce2f;
   transition: fill 0.5s;
 }
