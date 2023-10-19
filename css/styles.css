@@ -382,7 +382,7 @@ body {
   overflow: auto;
   display: block;
   max-height: 80vh;
-  width: 21vw;
+  width: 22vw;
   background-color: #232D3F;
   padding: 0vw 0vw 0vw 0vw;
   margin: 0;
@@ -796,7 +796,7 @@ a:-webkit-any-link {
   z-index: 1;
   position: absolute;
   bottom: 10vh;
-  right: 7.5vw;
+  right: 8vw;
   gap: 3vh;
   height: 17vh;
   border-radius: 50px;
