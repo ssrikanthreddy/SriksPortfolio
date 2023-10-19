@@ -359,6 +359,17 @@ body {
   }
 }
 @media (max-width: 1024px) and (max-width: 768px) {
+  .page-projects {
+    padding-right: 7vw !important;
+  }
+  .container h4 {
+    color: #03ce2f;
+    font-size: 5vw !important;
+  }
+  .container p {
+    color: #ffffff;
+    font-size: 4vw !important;
+  }
   .mobile-bar {
     margin-top: 20px;
   }
@@ -883,11 +894,15 @@ a:-webkit-any-link {
 }
 
 .page-projects {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   margin-top: 4vh;
   padding-right: 1vw;
 }
 
 .cardd {
+  flex: 1;
   margin: 0 1vw 1vw 0;
   background-color: #232D3F;
   /* Add shadows to create the "card" effect */
@@ -921,10 +936,12 @@ a:-webkit-any-link {
 }
 
 .link-buttons {
+  display: block;
+  flex: 1;
   width: 100%;
-  gap: 2vw;
+  gap: 1vw;
   justify-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .link-buttons a {
