@@ -317,6 +317,9 @@ body {
     margin-bottom: 0vh;
     cursor: pointer;
   }
+  .navbar:hover svg {
+    fill: #ffffff !important;
+  }
 }
 @media (max-width: 1024px) and (max-width: 768px) {
   .mobile-bar {

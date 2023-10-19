@@ -386,6 +386,10 @@ body {
     margin-bottom: 0vh;
     cursor: pointer;
   }
+
+  .navbar:hover svg{
+    fill: $text !important;
+  }
   
 
   @media (max-width:768px) {
