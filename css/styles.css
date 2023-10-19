@@ -921,6 +921,9 @@ a:-webkit-any-link {
 
 /* Add some padding inside the card container */
 .container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
   padding: 2px 16px;
 }
 
@@ -936,10 +939,13 @@ a:-webkit-any-link {
 }
 
 .link-buttons {
-  display: block;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
   flex: 1;
   width: 100%;
-  gap: 1vw;
+  vertical-align: bottom;
   justify-items: center;
   justify-content: space-between;
 }
