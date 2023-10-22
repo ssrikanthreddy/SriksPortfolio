@@ -362,6 +362,9 @@ body {
   }
 }
 @media (max-width: 1024px) and (max-width: 768px) {
+  .stats embed {
+    width: 100% !important;
+  }
   .page-projects {
     padding-right: 7vw !important;
   }
@@ -761,6 +764,19 @@ a:-webkit-any-link {
 
 .page-about {
   height: 70vh;
+}
+
+.stats {
+  width: 100%;
+  gap: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 1vw;
+}
+
+.stats embed {
+  width: 40%;
 }
 
 .about.content.active.page-about {

@@ -441,6 +441,11 @@ body {
 
   @media (max-width:768px) {
 
+    //About Page styles
+    .stats embed{
+      width: 100% !important;
+    }
+
 
     //Projects page stlyes (mobile)
     .page-projects{
@@ -875,6 +880,18 @@ a:-webkit-any-link {
   height: 70vh;
 }
 
+.stats {
+  width: 100%;
+  gap: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 1vw;
+}
+
+.stats embed{
+  width: 40%;
+}
 
 .about.content.active.page-about{
   flex-direction: column;
