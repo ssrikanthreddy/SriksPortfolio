@@ -1,7 +1,7 @@
 $primary: #1a1a1a;
 $secondary: #232D3F;
 $accents: #03ce2f;
-$text: #ffffff;
+$text: rgba(255, 255, 255, 0.822);
 $Poppins: 'Poppins', sans-serif;
 $main-width: 20vw;
 $vis-width: 75vw;
@@ -1337,6 +1337,36 @@ a:-webkit-any-link {
   border-radius: 2px;
 }
 
+//Certificates
+.certificate-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: $secondary;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.certificate-image img {
+  max-width: 100px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.certificate-details {
+  padding: 10px;
+}
+
+.certificate-details h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.certificate-details p {
+  margin: 0;
+  font-size: 14px;
+  color: $text;
+}
 
 
 
