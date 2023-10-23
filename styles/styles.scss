@@ -1320,28 +1320,24 @@ a:-webkit-any-link {
   opacity: 0.6;
 }
 
+.tech {
+  padding: 0vh 0vh 0vh;
+  margin: 0vh;
+}
+
 .badge {
+  font-family: $Poppins;
   display: inline-block;
   padding: 5px 10px;
   margin: 5px;
   font-size: 14px;
   font-weight: bold;
   color: #fff;
-  background-color: #007bff; /* Badge background color */
-  border-radius: 20px;
+  background-color: #03ce2f77; /* Badge background color */
+  border-radius: 2px;
 }
 
-.badge-html {
-  background-color: #6f42c1; /* Different color for HTML badge */
-}
 
-.badge-css {
-  background-color: #fd7e14; /* Different color for CSS badge */
-}
-
-.badge-js {
-  background-color: #28a745; /* Different color for JavaScript badge */
-}
 
 
 
