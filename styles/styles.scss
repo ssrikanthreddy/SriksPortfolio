@@ -150,17 +150,17 @@ body {
     left: 32.9% !important;
   }
 
-  .line {
-    left: 34% !important;
-  }
+  
 
   .dot {
     left: 34% !important;
   }
 
   .fadeline{
+    margin-right: 1vw;
     font-size: 3vw !important;
   }
+  
   
   .dischead{
     font-size: 3vw !important;
@@ -509,9 +509,7 @@ body {
       left: 30.5% !important;
     }
   
-    .line {
-      left: 31% !important;
-    }
+   
   
     .dot {
       left: 31.1% !important;
@@ -634,7 +632,7 @@ p {
   height: 95.5%;
   flex: 1;
   background-color: $primary;
-  padding: 1.3125rem 1.5vh 2vh 4.375vh;
+  padding: 1.3125rem 1.5vh 1vh 4.375vh;
   margin-left: 0vw;
   margin-right: 0;
   border-radius: 4.375vh;
@@ -720,7 +718,7 @@ header{
 
 .hometitle {
   text-align: center;
-  margin: 0;
+  margin: 0rem 0rem 3rem;
   font-family: 'Poppins', sans-serif;
   font-size: 1vw;
   font-weight: normal;
@@ -795,7 +793,7 @@ header{
 
 .home.content.active {
   margin: 0rem;
-  padding-top: 1vh;
+  padding-top: 0vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1096,11 +1094,16 @@ a:-webkit-any-link {
 }
 
 .page-cv{
+  margin-right: 2vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   overflow: auto;
   padding-left: 1vw;
+}
+
+.page-cv span{
+  color: $accents;
 }
 
 .row{
@@ -1144,13 +1147,7 @@ a:-webkit-any-link {
   margin-left: 0.5vw;
 }
 
-.line {
-  position: absolute;
-  width: 0vw;
-  background-color: #00000000;
-  height: 100%;
-  left: 34%;
-}
+
 
 .dot {
   content: '';
@@ -1196,6 +1193,24 @@ a:-webkit-any-link {
 }
 
 .fadeline{
+  font-family: $Poppins;
+  margin-top: 1vh;
+  margin-bottom: 0vh;
+  opacity: .6;
+}
+
+.company{
+  font-weight: bold;
+  font-family: $Poppins;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  opacity: .6;
+}
+
+.timeframe{
+  font-family: $Poppins;
+  margin-bottom: 0vh;
+  margin-top: 0vh;
   opacity: .6;
 }
 
@@ -1209,6 +1224,56 @@ a:-webkit-any-link {
   font-size: 0.9vw;
   margin-top: 0.5vh ;
   margin-bottom: 5vh;
+}
+
+//SKills
+
+.skills{
+  display: flex;
+  flex-direction: column;
+}
+
+.entry {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.skill {
+  display: flex;
+  height: 1vh;
+  align-items: center;
+  margin-bottom: 3vh;
+  width: 98%;
+  background-color: transparent;
+  border: 1px solid $accents;
+  border-radius: 10px;
+}
+
+.line {
+  margin: 0vw 0.1vw 0vw;
+  border-radius: 7px;
+  height: .5vh;
+  background-color: #4caf50;
+  text-align: center;
+  vertical-align: middle;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+
+.skillheading{
+  width: 100%;
+  font-size: 1vw;
+  font-family: $Poppins;
+}
+
+.perc {
+  font-size: 0.8vw;
+  font-family: $Poppins;
+  opacity: 0.6;
 }
 
 

@@ -1,4 +1,8 @@
+var skills = [80, 60, 90, 70];
+var bars = document.querySelectorAll('.line');
+
 document.addEventListener('DOMContentLoaded', function() {
+
 
   document.getElementById('menu-button').addEventListener('click', function() {
     document.getElementById('menu-button').classList.toggle('cross');
@@ -74,6 +78,16 @@ document.addEventListener('DOMContentLoaded', function() {
         void targetContent.offsetWidth;
         
       }
+
+
+      
+      bars.forEach(function(bar, index) {
+        var skill = 0;
+        if (tab.id === "cv") skill = skills[index];
+        bar.style.width = skill + '%';
+      });
+      
+
     });
   });
 
@@ -95,6 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Triggering reflow to force the animation
         void targetContent.offsetWidth;
       }
+
     });
   });
 
@@ -131,6 +146,13 @@ document.addEventListener('DOMContentLoaded', function() {
       currMob.classList.toggle('active');
       nextMob.classList.toggle('active');
     }
+      bars.forEach(function(bar, index) {
+        var skill = 0;
+        if (nextPage.id === "cv-page") skill = skills[index];
+        bar.style.width = skill + '%';
+      });
+
+
   });
 
 
@@ -164,6 +186,18 @@ document.addEventListener('DOMContentLoaded', function() {
       currMob.classList.toggle('active');
       prevMob.classList.toggle('active');
     }
+
+
+    var bars = document.querySelectorAll('.line');
+      bars.forEach(function(bar, index) {
+        console.log(prevPage.id);
+        var skill = 0;
+        if (prevPage.id === "cv-page") skill = skills[index];
+        bar.style.width = skill + '%';
+      });
+
+      
   }); 
+
 
 });
