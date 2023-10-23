@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
       bars.forEach(function(bar, index) {
         var skill = 0;
         if (tab.id === "cv") skill = skills[index];
+        void bar.offsetWidth;
         bar.style.width = skill + '%';
       });
       
@@ -108,7 +109,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Triggering reflow to force the animation
         void targetContent.offsetWidth;
+
+        
       }
+
+      bars.forEach(function(bar, index) {
+        var skill = 0;
+        if (mob.id === "mcv") skill = skills[index];
+        void bar.offsetWidth;
+        bar.style.width = skill + '%';
+      });
 
     });
   });
@@ -149,7 +159,9 @@ document.addEventListener('DOMContentLoaded', function() {
       bars.forEach(function(bar, index) {
         var skill = 0;
         if (nextPage.id === "cv-page") skill = skills[index];
+        void bar.offsetWidth;
         bar.style.width = skill + '%';
+        
       });
 
 
@@ -189,12 +201,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     var bars = document.querySelectorAll('.line');
-      bars.forEach(function(bar, index) {
-        console.log(prevPage.id);
+    bars.forEach(function(bar, index) {
         var skill = 0;
         if (prevPage.id === "cv-page") skill = skills[index];
+        bar.offsetWidth;
         bar.style.width = skill + '%';
-      });
+        
+    });
+
+
 
       
   }); 
