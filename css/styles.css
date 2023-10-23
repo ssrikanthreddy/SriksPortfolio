@@ -123,7 +123,7 @@ body {
     padding-left: 2vw !important;
   }
   .timeline::after {
-    left: 32.9% !important;
+    left: 32.8% !important;
   }
   .dot {
     left: 34% !important;
@@ -1027,7 +1027,7 @@ a:-webkit-any-link {
   background-color: #232D3F;
   top: 0;
   bottom: 0;
-  left: 27.25%;
+  left: 27%;
   margin-left: 0.5vw;
 }
 
