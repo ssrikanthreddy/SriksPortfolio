@@ -154,6 +154,12 @@ body {
   .perc {
     font-size: 1.6vw !important;
   }
+  .certificate-details h3 {
+    font-size: 2vh !important;
+  }
+  .certificate-details {
+    padding: 2vw !important;
+  }
   .projects.content.active h2 {
     margin-top: 0vh;
     font-size: 10vw !important;
@@ -453,6 +459,9 @@ body {
   .perc {
     font-size: 3.2vw !important;
   }
+  .certificate-card {
+    width: 100% !important;
+  }
   .page-projects {
     padding-right: 7vw !important;
   }
@@ -528,10 +537,10 @@ p {
 }
 
 #side {
-  height: 95.5%;
+  height: 94%;
   flex: 1;
   background-color: #1a1a1a;
-  padding: 1.3125rem 1.5vh 1vh 4.375vh;
+  padding: 1.3125rem 1.5vh 3vh 4.375vh;
   margin-left: 0vw;
   margin-right: 0;
   border-radius: 4.375vh;
@@ -632,7 +641,7 @@ header {
 .links svg {
   width: 2em;
   height: 2em;
-  fill: white;
+  fill: rgba(255, 255, 255, 0.822);
   transition: fill 0.5s;
 }
 
@@ -651,11 +660,11 @@ header {
   display: inline-block;
   padding: 0.625vh 2.5vh;
   background-color: transparent;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.822);
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-size: 1.3vw;
-  border: 0.176vh solid #ffffff;
+  border: 0.176vh solid rgba(255, 255, 255, 0.822);
   border-radius: 2.5vh;
   transition: background-color 0.3s;
   text-decoration: none !important;
@@ -668,7 +677,7 @@ header {
 .tab {
   padding: 0.625vh;
   margin-bottom: 0.625vh;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.822);
   cursor: pointer;
 }
 
@@ -679,7 +688,7 @@ header {
 .tab svg {
   width: 4vh;
   height: 4vh;
-  fill: white;
+  fill: rgba(255, 255, 255, 0.822);
   transition: fill 0.5s;
 }
 
@@ -816,7 +825,7 @@ header {
 }
 
 a.email-link {
-  color: #a3abb3; /* Change the color to your preference */
+  color: rgba(255, 255, 255, 0.822); /* Change the color to your preference */
   text-decoration: none; /* Remove default underline */
   font-weight: bold; /* Optionally, make the text bold */
 }
@@ -824,11 +833,11 @@ a.email-link {
 /* Apply hover effect */
 a.email-link:hover {
   text-decoration: underline; /* Underline on hover */
-  color: #ffffff; /* Change color on hover to your preference */
+  color: rgba(255, 255, 255, 0.822); /* Change color on hover to your preference */
 }
 
 a:-webkit-any-link {
-  color: white;
+  color: rgba(255, 255, 255, 0.822);
   cursor: pointer;
   text-decoration: underline;
 }
@@ -1168,26 +1177,48 @@ a:-webkit-any-link {
   border-radius: 2px;
 }
 
+.row.cert {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
 .certificate-card {
+  margin-right: 1vw;
+  height: 30vh;
+  width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
   background-color: #232D3F;
   border-radius: 8px;
   overflow: hidden;
 }
 
+.certificate-image {
+  height: 100%;
+  width: 40%;
+}
+
 .certificate-image img {
-  max-width: 100px;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .certificate-details {
-  padding: 10px;
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1vw;
 }
 
 .certificate-details h3 {
+  font-size: 2.5vh;
   margin-top: 0;
   margin-bottom: 5px;
 }
@@ -1196,6 +1227,13 @@ a:-webkit-any-link {
   margin: 0;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.822);
+}
+
+.page-cv a {
+  width: 50%;
+  flex-direction: row;
+  display: flex;
+  text-decoration: none !important;
 }
 
 .projects.content.active {
