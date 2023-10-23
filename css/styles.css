@@ -462,6 +462,9 @@ body {
   .certificate-card {
     width: 100% !important;
   }
+  .page-cv a {
+    width: 95% !important;
+  }
   .page-projects {
     padding-right: 7vw !important;
   }
