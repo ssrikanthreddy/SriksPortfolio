@@ -4,7 +4,7 @@ $accents: #03ce2f;
 $text: #ffffff;
 $Poppins: 'Poppins', sans-serif;
 $main-width: 20vw;
-$vis-width: 70vw;
+$vis-width: 75vw;
 
 //Scrollbar
 
@@ -64,7 +64,7 @@ body {
 
 #visualizer {
   position: relative;
-  margin-left: 6vh;
+  margin-left: 5vh;
   min-height: 80vh;
   display: flex;
   flex-wrap: wrap;
@@ -124,6 +124,56 @@ body {
     margin-top: 0vh;
     font-size: 10vw !important;
   }
+
+  .page-cv{
+    margin-right: 10vw;
+  }
+
+  .page-cv h3 {
+    margin-right: 1vw;
+    font-size: 5vw !important; 
+    font-family: $Poppins;
+    width: 100%;
+  }
+
+  .col-left{
+    padding-right: 4vw !important;
+    width: 28% !important;
+  }
+
+  .col-right{
+    padding-left: 2vw !important;
+  }
+
+
+  .timeline::after{
+    left: 32.9% !important;
+  }
+
+  .line {
+    left: 34% !important;
+  }
+
+  .dot {
+    left: 34% !important;
+  }
+
+  .fadeline{
+    font-size: 3vw !important;
+  }
+  
+  .dischead{
+    font-size: 3vw !important;
+  }
+  
+  .disc {
+    opacity: 0.9;
+    font-size: 2vw !important;
+    margin-top: 0.5vh ;
+    margin-bottom: 5vh;
+  }
+
+  
 
 
   //Projects Page Styles
@@ -446,6 +496,43 @@ body {
       width: 100% !important;
     }
 
+    //Resume Page styles
+    .row {
+      flex-direction: column !important;
+    }
+
+    .cv-col1{
+      width: 100% !important;
+    }
+
+    .timeline::after{
+      left: 30.5% !important;
+    }
+  
+    .line {
+      left: 31% !important;
+    }
+  
+    .dot {
+      left: 31.1% !important;
+    }
+
+    .fadeline{
+      font-size: 5vw !important;
+    }
+    
+    .dischead{
+      font-size: 5vw !important;
+    }
+    
+    .disc {
+      opacity: 0.9;
+      font-size: 3vw !important;
+      margin-top: 0.5vh ;
+      margin-bottom: 5vh;
+    }
+  
+
 
     //Projects page stlyes (mobile)
     .page-projects{
@@ -523,6 +610,10 @@ body {
   
 }
 
+p {
+  font-family: $Poppins;
+}
+
 #main {
   overflow: auto;
   display: block;
@@ -540,10 +631,10 @@ body {
 }
 
 #side {
-  height: 86.5%;
+  height: 95.5%;
   flex: 1;
   background-color: $primary;
-  padding: 1.3125rem 1.5vh 8.75vh 4.375vh;
+  padding: 1.3125rem 1.5vh 2vh 4.375vh;
   margin-left: 0vw;
   margin-right: 0;
   border-radius: 4.375vh;
@@ -793,7 +884,7 @@ header{
 
 .about.content.active {
   margin-right: 0px; 
-  max-height: 80vh;
+  max-height: 76vh;
   width:fit-content;
   overflow-y: auto;
   overflow-x: hidden;
@@ -877,6 +968,7 @@ a:-webkit-any-link {
 }
 
 .page-about{
+  
   height: 70vh;
 }
 
@@ -965,7 +1057,7 @@ a:-webkit-any-link {
   z-index: 1;
   position: absolute;
   bottom: 10vh;
-  right: 11vw;
+  right: 8.5vw;
   gap: 3vh;
   height: 17vh;
   border-radius: 50px;
@@ -988,9 +1080,12 @@ a:-webkit-any-link {
   transition: 0.3s;
 }
 
-
-
 //Resume Page styles
+
+.cv.content.active{
+  height: 100%;
+  overflow: auto;
+}
 .cv.content.active h2{
   padding-left: 1vw;
   font-family: $Poppins;
@@ -1001,8 +1096,119 @@ a:-webkit-any-link {
 }
 
 .page-cv{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   overflow: auto;
   padding-left: 1vw;
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.cv-col1{
+  overflow: auto;
+  overflow-x: hidden;
+  width: 60%;
+}
+
+.cv-col2{
+  width: 40%;
+}
+
+.page-cv h3 {
+  font-size: 1.3vw;
+  font-family: $Poppins;
+  width: 100%;
+}
+
+
+.timeline {
+  display: flex;
+  position: relative;
+}
+
+
+.timeline::after{
+  content: '';
+  position: absolute;
+  width: 0.2vw;
+  background-color: $secondary;
+  top: 0;
+  bottom: 0;
+  left: 27.25%;
+  margin-left: 0.5vw;
+}
+
+.line {
+  position: absolute;
+  width: 0vw;
+  background-color: #00000000;
+  height: 100%;
+  left: 34%;
+}
+
+.dot {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: $accents;
+  border-radius: 50%;
+  top: 10%;
+  left: 29.2%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: .8;
+}
+
+
+
+.col-left,
+.col-right {
+  position: relative;
+}
+
+.col-left{
+  width: 24%;
+  text-align: right;
+  padding-right: 1vw;
+}
+
+.col-right{
+  flex: 1;
+  text-align: left;
+  padding-left: 2vw;
+  padding-right: 4vw;
+}
+
+
+.col-left::after {
+  left: 0;
+}
+
+.col-right::after {
+  right: 0;
+}
+
+.fadeline{
+  opacity: .6;
+}
+
+.dischead{
+  font-size: 1.3vw;
+  font-family: $Poppins;
+}
+
+.disc {
+  opacity: 0.9;
+  font-size: 0.9vw;
+  margin-top: 0.5vh ;
+  margin-bottom: 5vh;
 }
 
 
