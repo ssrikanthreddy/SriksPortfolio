@@ -1,4 +1,4 @@
-var skills = [80, 60, 90, 70];
+var skills = [92, 90, 84, 90];
 var bars = document.querySelectorAll('.line');
 
 document.addEventListener('DOMContentLoaded', function() {

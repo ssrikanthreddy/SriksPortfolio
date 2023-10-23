@@ -142,24 +142,11 @@ body {
     margin-bottom: 5vh;
   }
   .skill {
-    display: flex;
     height: 2vh !important;
-    align-items: center;
-    margin-bottom: 3vh;
-    width: 98%;
-    background-color: transparent;
-    border: 1px solid #03ce2f;
-    border-radius: 10px;
   }
   .line {
     margin: 0vw 0.4vw 0vw !important;
-    border-radius: 7px;
     height: 1vh !important;
-    background-color: #4caf50;
-    text-align: center;
-    vertical-align: middle;
-    width: 0;
-    transition: width 0.5s ease;
   }
   .skillheading {
     font-size: 2vw !important;
@@ -452,6 +439,13 @@ body {
   }
   .cv-col2 {
     width: 80% !important;
+  }
+  .skill {
+    height: 2vh !important;
+  }
+  .line {
+    margin: 0vw 0.9vw 0vw !important;
+    height: 1vh !important;
   }
   .skillheading {
     font-size: 4vw !important;
@@ -1008,7 +1002,7 @@ a:-webkit-any-link {
 .cv-col1 {
   overflow: auto;
   overflow-x: hidden;
-  width: 60%;
+  width: 57%;
 }
 
 .cv-col2 {
@@ -1155,6 +1149,29 @@ a:-webkit-any-link {
   font-size: 0.8vw;
   font-family: "Poppins", sans-serif;
   opacity: 0.6;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff; /* Badge background color */
+  border-radius: 20px;
+}
+
+.badge-html {
+  background-color: #6f42c1; /* Different color for HTML badge */
+}
+
+.badge-css {
+  background-color: #fd7e14; /* Different color for CSS badge */
+}
+
+.badge-js {
+  background-color: #28a745; /* Different color for JavaScript badge */
 }
 
 .projects.content.active {
