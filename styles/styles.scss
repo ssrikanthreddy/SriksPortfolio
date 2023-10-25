@@ -120,12 +120,17 @@ body {
 @media (max-width: 1024px) {
 
   //Resume Page styles
+
+  .cv.content.active {
+    height: 100% !important;
+  }
   .cv.content.active h2{
     margin-top: 0vh;
     font-size: 10vw !important;
   }
 
   .page-cv{
+    margin-bottom: 3vh;
     margin-right: 10vw !important;
   }
 
