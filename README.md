@@ -41,7 +41,7 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/my-portfolio.git
+   git clone https://github.com/ssrikanthreddy/SriksPortfolio.git
    ```
 
 2. Open the project in your code editor.
