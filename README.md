@@ -1,4 +1,4 @@
-![Thumbnail](assets/thumbnail.png)
+![Thumbnail](https://github.com/ssrikanthreddy/SriksPortfolio/blob/main/assets/thumbnail.png?raw=true)
 
 # My Portfolio
 
