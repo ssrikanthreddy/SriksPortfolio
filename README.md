@@ -79,4 +79,4 @@ This project is licensed under the [MIT License](LICENSE).
 - Thanks to [Awesome Open Source](https://awesomeopensource.com/) for inspiration.
 - Icons by [FontAwesome](https://fontawesome.com/).
 
-Feel free to customize this template based on your project's specifics. Adding clear instructions for installation, customization, and contribution will make it easier for others to use and contribute to your open-source portfolio project.
+
