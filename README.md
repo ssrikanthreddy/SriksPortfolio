@@ -1,4 +1,4 @@
-Absolutely, making your portfolio project open source is a great idea! Here's a sample documentation template you can use for your portfolio project:
+[[]]
 
 # My Portfolio
 
