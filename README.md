@@ -1,4 +1,4 @@
-[[]]
+![Thumbnail](assets/thumbnail.png)
 
 # My Portfolio
 
