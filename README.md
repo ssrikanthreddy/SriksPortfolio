@@ -48,11 +48,12 @@ Before you begin, ensure you have the following installed:
 2. Open the project in your code editor.
 
 3. run SCSS auto compiler
+
     ```bash
-       npx sass --watch styles/styles.scss css/styles.css
+     npx sass --watch styles/styles.scss css/styles.css
     ```
    
-5. Open `index.html` in your web browser.
+4. Open `index.html` in your web browser.
 
 ## Usage
 
