@@ -35,6 +35,7 @@ Before you begin, ensure you have the following installed:
 
 - Web browser
 - Code editor (e.g., Visual Studio Code)
+- SCSS installed
 
 ### Installation
 
@@ -46,11 +47,12 @@ Before you begin, ensure you have the following installed:
 
 2. Open the project in your code editor.
 
-3. run ```bash
-         npx sass --watch styles/styles.scss css/styles.css
+3. run SCSS auto compiler
+```bash
+   npx sass --watch styles/styles.scss css/styles.css
    ```
    
-4. Open `index.html` in your web browser.
+5. Open `index.html` in your web browser.
 
 ## Usage
 
